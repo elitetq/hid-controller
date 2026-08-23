@@ -525,7 +525,7 @@
 			(size 1.475 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "unconnected-(U1-PD0-Pad5)")
+			(net "OSC_IN")
 			(pinfunction "PD0_5")
 			(pintype "bidirectional")
 			(uuid "5420a6a6-1ac1-45c1-a8bd-be2d03cae2c9")
@@ -535,7 +535,7 @@
 			(size 1.475 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "unconnected-(U1-PD1-Pad6)")
+			(net "OSC_OUT")
 			(pinfunction "PD1_6")
 			(pintype "bidirectional")
 			(uuid "051f41f3-da95-4aa8-ab90-02b01888e349")
@@ -675,7 +675,7 @@
 			(size 0.3 1.475)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "unconnected-(U1-PB2-Pad20)")
+			(net "BOOT1")
 			(pinfunction "PB2_20")
 			(pintype "bidirectional")
 			(uuid "ca91a4e6-297a-4397-90bc-3563eb61e8f2")
@@ -915,7 +915,7 @@
 			(size 0.3 1.475)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "unconnected-(U1-BOOT0-Pad44)")
+			(net "BOOT0")
 			(pinfunction "BOOT0_44")
 			(pintype "input")
 			(uuid "109b22aa-e13d-4f65-a20d-aa1e72def918")
@@ -964,6 +964,341 @@
 		(model "${KICAD10_3DMODEL_DIR}/Package_QFP.3dshapes/LQFP-48_7x7mm_P0.5mm.step"
 			(offset
 				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "lib:ABLS-8.000MHZ-B4-T"
+		(layer "F.Cu")
+		(uuid "6612f715-22f6-4889-98f4-165bf028f6f9")
+		(at 143.55 86.2)
+		(descr "ABLS-8.000MHZ-B4-T-2")
+		(tags "Crystal or Oscillator")
+		(property "Reference" "Y1"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(uuid "9033dbb6-f9e1-4282-9f24-25c6444c4341")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Value" "8MHz"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "25c14d3c-e489-4423-9155-74d3d64623b7")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Datasheet" "https://abracon.com/Resonators/abls.pdf"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "97f53a6c-7766-434f-af35-83ebcf4a237b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "HC/49US (AT49) SMD LOW PROFILE CRYSTAL"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a7f89d75-506d-4a84-9cbc-3a4f0a416470")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "4.2"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "85834bdb-fa39-47f8-9c9a-342849b94d1b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "ABRACON"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b02f0010-8e95-4151-8b9a-c5fa4bf761aa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "ABLS-8.000MHZ-B4-T"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f4b6664c-a37d-47b6-a19d-651f415f37de")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" "815-ABLS-8.0M-T"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7f81fdab-c3e8-4e8c-bc23-bc51514546d2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/ABRACON/ABLS-8.000MHZ-B4-T?qs=yTU0IcKoRlHGW4LibtbY9Q%3D%3D"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c64c9009-acd6-4ae7-b6b3-44258fb50943")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Arrow Part Number" "ABLS-8.000MHZ-B4-T"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dc5976cf-9e71-48d2-bdf6-96bb063345af")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/abls-8.000mhz-b4-t/abracon?region=europe"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8670466a-fea7-4d82-9021-926ad7ed7aba")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/ed938ebc-9a57-4c5e-b614-0040359b1a96")
+		(sheetname "/")
+		(sheetfile "hid-controller-pcb.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -5.7 -2.35)
+			(end 5.7 -2.35)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "98472112-4a7d-465d-a0c5-917c441047ef")
+		)
+		(fp_line
+			(start -5.7 -1.6)
+			(end -5.7 -2.35)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "36fd472e-0a45-4b4f-9260-2a8f048a1026")
+		)
+		(fp_line
+			(start -5.7 2.35)
+			(end -5.7 1.6)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "037a5da4-af95-4358-9eed-86e23ccc7392")
+		)
+		(fp_line
+			(start 5.7 -2.35)
+			(end 5.7 -1.6)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "418f5129-aba0-41e4-b7c3-64ea266738f0")
+		)
+		(fp_line
+			(start 5.7 1.6)
+			(end 5.7 2.35)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "2162de1a-93d7-4684-950b-daacbd3d4c35")
+		)
+		(fp_line
+			(start 5.7 2.35)
+			(end -5.7 2.35)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "4969ba1b-5be7-4351-9d34-6e2883090010")
+		)
+		(fp_line
+			(start -8.55 -3.35)
+			(end 8.55 -3.35)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "f9be4819-3693-4bdc-9a20-e5d455d8b96a")
+		)
+		(fp_line
+			(start -8.55 3.35)
+			(end -8.55 -3.35)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "202d2c82-1f88-4945-bc8c-57702a97bb7f")
+		)
+		(fp_line
+			(start 8.55 -3.35)
+			(end 8.55 3.35)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "aff93922-e86f-478e-8545-ca20b57a3219")
+		)
+		(fp_line
+			(start 8.55 3.35)
+			(end -8.55 3.35)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "1b13a88e-4116-4163-aed9-4aaba5de0193")
+		)
+		(fp_line
+			(start -5.7 -2.35)
+			(end 5.7 -2.35)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "4e0044c3-2431-4cd6-873c-8220d8a7462d")
+		)
+		(fp_line
+			(start -5.7 2.35)
+			(end -5.7 -2.35)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "12711826-1f6a-460a-9183-321e1a537a12")
+		)
+		(fp_line
+			(start 5.7 -2.35)
+			(end 5.7 2.35)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "e99f70d1-b35b-4812-886c-9e672e8fbcb8")
+		)
+		(fp_line
+			(start 5.7 2.35)
+			(end -5.7 2.35)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "59b6eb92-ac36-4f92-85e7-7081ce4f292a")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "b3cfe3ee-72de-47ee-b1d4-009773b72dd8")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -4.75 0 90)
+			(size 2.1 5.6)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "OSC_OUT")
+			(pinfunction "1_1")
+			(pintype "passive")
+			(uuid "37f92334-4bcf-40ab-9aaa-fae2e9584981")
+		)
+		(pad "2" smd rect
+			(at 4.75 0 90)
+			(size 2.1 5.6)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "OSC_IN")
+			(pinfunction "2_2")
+			(pintype "passive")
+			(uuid "dac88811-a735-4b5f-ae73-f55b7eac42c8")
+		)
+		(embedded_fonts no)
+		(model "${KIPRJMOD}/library/3d/ABLS-8.000MHZ-B4-T.stp"
+			(offset
+				(xyz 0 0 2.700000007)
 			)
 			(scale
 				(xyz 1 1 1)
