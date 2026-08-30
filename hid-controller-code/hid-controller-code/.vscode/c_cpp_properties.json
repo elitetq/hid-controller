@@ -1,19 +1,32 @@
 {
     "configurations": [
         {
-            "name": "Win32",
+            "name": "STM32F103xB",
             "includePath": [
-                "${default}",
-                "${workspaceFolder}/Drivers/**"
+                "${workspaceFolder}/Core/Inc",
+                "${workspaceFolder}/Drivers/STM32F1xx_HAL_Driver/Inc",
+                "${workspaceFolder}/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy",
+                "${workspaceFolder}/Drivers/CMSIS/Device/ST/STM32F1xx/Include",
+                "${workspaceFolder}/Drivers/CMSIS/Include",
+                "${workspaceFolder}/USB_DEVICE/App",
+                "${workspaceFolder}/USB_DEVICE/Target",
+                "${workspaceFolder}/Middlewares/ST/STM32_USB_Device_Library/Core/Inc",
+                "${workspaceFolder}/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc",
+                "${workspaceFolder}/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc",
+                "${workspaceFolder}/Drivers/STM32F1xx_HAL_Driver/Inc"
             ],
             "defines": [
-                "_DEBUG",
-                "UNICODE",
-                "_UNICODE"
+                "USE_HAL_DRIVER",
+                "STM32F103xB"
             ],
-            "cStandard": "c17",
+            "compilerPath": "C:/msys64/mingw64/bin/arm-none-eabi-gcc.exe",
+            "compilerArgs": [
+                "-mcpu=cortex-m3",
+                "-mthumb"
+            ],
+            "cStandard": "gnu17",
             "cppStandard": "gnu++17",
-            "intelliSenseMode": "windows-gcc-x64"
+            "intelliSenseMode": "gcc-arm"
         }
     ],
     "version": 4
