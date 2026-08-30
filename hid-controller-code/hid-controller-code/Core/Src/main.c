@@ -28,13 +28,14 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
-/* Must match the HID report descriptor in usbd_hid.c byte for byte. */
+/* Must match the HID report descriptor in usbd_custom_hid_if.c byte for byte. */
 typedef struct __attribute__((packed))
 {
   uint8_t x;        /* left  stick X */
   uint8_t y;        /* left  stick Y */
-  uint8_t rx;       /* right stick X */
-  uint8_t ry;       /* right stick Y */
+  uint8_t z;        /* right stick X */
+  uint8_t rz;       /* right stick Y */
+  uint8_t hat;      /* d-pad, 8 = centred */
   uint8_t buttons;  /* bit 0..7 = button 1..8 */
 } gamepad_report_t;
 /* USER CODE END PTD */
@@ -126,10 +127,10 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-    gamepad_update();
-    USBD_CUSTOM_HID_SendReport_FS((uint8_t*)&gamepad_report,5);
 
     /* USER CODE BEGIN 3 */
+    gamepad_update();
+    USBD_CUSTOM_HID_SendReport_FS((uint8_t*)&gamepad_report,sizeof(gamepad_report));
   }
   /* USER CODE END 3 */
 }
@@ -147,11 +148,11 @@ void SystemClock_Config(void)
   /** Initializes the RCC Oscillators according to the specified parameters
   * in the RCC_OscInitTypeDef structure.
   */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE|RCC_OSCILLATORTYPE_LSE;
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_LSI|RCC_OSCILLATORTYPE_HSE;
   RCC_OscInitStruct.HSEState = RCC_HSE_ON;
   RCC_OscInitStruct.HSEPredivValue = RCC_HSE_PREDIV_DIV1;
-  RCC_OscInitStruct.LSEState = RCC_LSE_ON;
   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
+  RCC_OscInitStruct.LSIState = RCC_LSI_ON;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
   RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
   RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL9;
@@ -175,7 +176,7 @@ void SystemClock_Config(void)
   }
   PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_RTC|RCC_PERIPHCLK_ADC
                               |RCC_PERIPHCLK_USB;
-  PeriphClkInit.RTCClockSelection = RCC_RTCCLKSOURCE_LSE;
+  PeriphClkInit.RTCClockSelection = RCC_RTCCLKSOURCE_LSI;
   PeriphClkInit.AdcClockSelection = RCC_ADCPCLK2_DIV6;
   PeriphClkInit.UsbClockSelection = RCC_USBCLKSOURCE_PLL_DIV1_5;
   if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK)
@@ -403,22 +404,23 @@ static void MX_GPIO_Init(void)
 
 /* USER CODE BEGIN 4 */
 static void gamepad_update_joysticks() {
-  uint32_t avg_x, avg_y, avg_rx, avg_ry;
-  avg_x = avg_y = avg_rx = avg_ry = 0;
+  uint32_t avg_x, avg_y, avg_z, avg_rz;
+  avg_x = avg_y = avg_z = avg_rz = 0;
   for(uint32_t i = 0; i < JOYSTICK_OVERSAMPLE; i++) {
     avg_x += joystick_buf[i*4];
     avg_y += joystick_buf[i*4+1];
-    avg_rx += joystick_buf[i*4+2];
-    avg_ry += joystick_buf[i*4+3];
+    avg_z += joystick_buf[i*4+2];
+    avg_rz += joystick_buf[i*4+3];
   }
   gamepad_report.x = avg_x >> (JOYSTICK_OVERSAMPLE_BITS+4);
-  gamepad_report.rx = avg_rx >> (JOYSTICK_OVERSAMPLE_BITS+4);
+  gamepad_report.z = avg_z >> (JOYSTICK_OVERSAMPLE_BITS+4);
   gamepad_report.y = avg_y >> (JOYSTICK_OVERSAMPLE_BITS+4);
-  gamepad_report.ry = avg_ry >> (JOYSTICK_OVERSAMPLE_BITS+4);
+  gamepad_report.rz = avg_rz >> (JOYSTICK_OVERSAMPLE_BITS+4);
 }
 
 static void gamepad_update_buttons() {
   gamepad_report.buttons = 0xAA; // 10101010 temp
+  gamepad_report.hat = 8;        // centred - 0 would read as d-pad up
   return;
   // add actual gpio polling later
 }

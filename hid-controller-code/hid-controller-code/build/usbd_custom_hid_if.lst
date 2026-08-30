@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccwyOXFL.s 			page 1
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccgbNtZD.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccwyOXFL.s 			page 1
   31:USB_DEVICE/App/usbd_custom_hid_if.c **** 
   32:USB_DEVICE/App/usbd_custom_hid_if.c **** /* USER CODE BEGIN PV */
   33:USB_DEVICE/App/usbd_custom_hid_if.c **** /* Private variables ---------------------------------------------------------*/
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccwyOXFL.s 			page 2
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccgbNtZD.s 			page 2
 
 
   34:USB_DEVICE/App/usbd_custom_hid_if.c **** 
@@ -118,119 +118,145 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccwyOXFL.s 			page 1
   88:USB_DEVICE/App/usbd_custom_hid_if.c ****   */
   89:USB_DEVICE/App/usbd_custom_hid_if.c **** 
   90:USB_DEVICE/App/usbd_custom_hid_if.c **** /** Usb HID report descriptor. */
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccwyOXFL.s 			page 3
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccgbNtZD.s 			page 3
 
 
   91:USB_DEVICE/App/usbd_custom_hid_if.c **** __ALIGN_BEGIN static uint8_t CUSTOM_HID_ReportDesc_FS[USBD_CUSTOM_HID_REPORT_DESC_SIZE] __ALIGN_END
   92:USB_DEVICE/App/usbd_custom_hid_if.c **** {
   93:USB_DEVICE/App/usbd_custom_hid_if.c ****   /* USER CODE BEGIN 0 */
-  94:USB_DEVICE/App/usbd_custom_hid_if.c ****   /* Gamepad: 4 analog axes + 8 buttons. 5-byte input report:
-  95:USB_DEVICE/App/usbd_custom_hid_if.c ****    *   byte 0 : X   (left  stick X, ADC1_IN1 / PA1)
-  96:USB_DEVICE/App/usbd_custom_hid_if.c ****    *   byte 1 : Y   (left  stick Y, ADC1_IN2 / PA2)
-  97:USB_DEVICE/App/usbd_custom_hid_if.c ****    *   byte 2 : Rx  (right stick X, ADC1_IN4 / PA4)
-  98:USB_DEVICE/App/usbd_custom_hid_if.c ****    *   byte 3 : Ry  (right stick Y, ADC1_IN5 / PA5)
-  99:USB_DEVICE/App/usbd_custom_hid_if.c ****    *   byte 4 : buttons 1..8, bit 0 = button 1
- 100:USB_DEVICE/App/usbd_custom_hid_if.c ****    */
- 101:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x05, 0x01,        /* Usage Page (Generic Desktop)     */
- 102:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x09, 0x05,        /* Usage (Game Pad)                 */
- 103:USB_DEVICE/App/usbd_custom_hid_if.c ****   0xA1, 0x01,        /* Collection (Application)         */
- 104:USB_DEVICE/App/usbd_custom_hid_if.c ****   0xA1, 0x00,        /*   Collection (Physical)          */
- 105:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x05, 0x01,        /*     Usage Page (Generic Desktop) */
- 106:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x09, 0x30,        /*     Usage (X)                    */
- 107:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x09, 0x31,        /*     Usage (Y)                    */
- 108:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x09, 0x33,        /*     Usage (Rx)                   */
- 109:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x09, 0x34,        /*     Usage (Ry)                   */
- 110:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x15, 0x00,        /*     Logical Minimum (0)          */
- 111:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x26, 0xFF, 0x00,  /*     Logical Maximum (255)        */
- 112:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x75, 0x08,        /*     Report Size (8)              */
- 113:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x95, 0x04,        /*     Report Count (4)             */
- 114:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x81, 0x02,        /*     Input (Data,Var,Abs)         */
- 115:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x05, 0x09,        /*     Usage Page (Button)          */
- 116:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x19, 0x01,        /*     Usage Minimum (Button 1)     */
- 117:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x29, 0x08,        /*     Usage Maximum (Button 8)     */
- 118:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x15, 0x00,        /*     Logical Minimum (0)          */
- 119:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x25, 0x01,        /*     Logical Maximum (1)          */
- 120:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x75, 0x01,        /*     Report Size (1)              */
- 121:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x95, 0x08,        /*     Report Count (8)             */
- 122:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x81, 0x02,        /*     Input (Data,Var,Abs)         */
- 123:USB_DEVICE/App/usbd_custom_hid_if.c ****   0xC0,              /*   End Collection                 */
- 124:USB_DEVICE/App/usbd_custom_hid_if.c ****   /* USER CODE END 0 */
- 125:USB_DEVICE/App/usbd_custom_hid_if.c ****   0xC0    /*     END_COLLECTION	             */
- 126:USB_DEVICE/App/usbd_custom_hid_if.c **** };
- 127:USB_DEVICE/App/usbd_custom_hid_if.c **** 
- 128:USB_DEVICE/App/usbd_custom_hid_if.c **** /* USER CODE BEGIN PRIVATE_VARIABLES */
- 129:USB_DEVICE/App/usbd_custom_hid_if.c **** /* CubeMX regenerates usbd_conf.h and resets USBD_CUSTOM_HID_REPORT_DESC_SIZE to
- 130:USB_DEVICE/App/usbd_custom_hid_if.c ****  * its default of 2, which silently truncates the descriptor above. Fail the
- 131:USB_DEVICE/App/usbd_custom_hid_if.c ****  * build instead of shipping a 2-byte report descriptor. */
- 132:USB_DEVICE/App/usbd_custom_hid_if.c **** _Static_assert(sizeof(CUSTOM_HID_ReportDesc_FS) == 47,
- 133:USB_DEVICE/App/usbd_custom_hid_if.c ****                "USBD_CUSTOM_HID_REPORT_DESC_SIZE must be 47 - check usbd_conf.h");
- 134:USB_DEVICE/App/usbd_custom_hid_if.c **** /* USER CODE END PRIVATE_VARIABLES */
- 135:USB_DEVICE/App/usbd_custom_hid_if.c **** 
- 136:USB_DEVICE/App/usbd_custom_hid_if.c **** /**
- 137:USB_DEVICE/App/usbd_custom_hid_if.c ****   * @}
- 138:USB_DEVICE/App/usbd_custom_hid_if.c ****   */
- 139:USB_DEVICE/App/usbd_custom_hid_if.c **** 
- 140:USB_DEVICE/App/usbd_custom_hid_if.c **** /** @defgroup USBD_CUSTOM_HID_Exported_Variables USBD_CUSTOM_HID_Exported_Variables
- 141:USB_DEVICE/App/usbd_custom_hid_if.c ****   * @brief Public variables.
- 142:USB_DEVICE/App/usbd_custom_hid_if.c ****   * @{
- 143:USB_DEVICE/App/usbd_custom_hid_if.c ****   */
- 144:USB_DEVICE/App/usbd_custom_hid_if.c **** extern USBD_HandleTypeDef hUsbDeviceFS;
- 145:USB_DEVICE/App/usbd_custom_hid_if.c **** 
- 146:USB_DEVICE/App/usbd_custom_hid_if.c **** /* USER CODE BEGIN EXPORTED_VARIABLES */
- 147:USB_DEVICE/App/usbd_custom_hid_if.c **** 
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccwyOXFL.s 			page 4
+  94:USB_DEVICE/App/usbd_custom_hid_if.c ****   /* Generic dual-stick gamepad. 6-byte input report:
+  95:USB_DEVICE/App/usbd_custom_hid_if.c ****    *   byte 0 : X   (left  stick, ADC1_IN1 / PA1)
+  96:USB_DEVICE/App/usbd_custom_hid_if.c ****    *   byte 1 : Y   (left  stick, ADC1_IN2 / PA2)
+  97:USB_DEVICE/App/usbd_custom_hid_if.c ****    *   byte 2 : Z   (right stick, ADC1_IN4 / PA4)
+  98:USB_DEVICE/App/usbd_custom_hid_if.c ****    *   byte 3 : Rz  (right stick, ADC1_IN5 / PA5)
+  99:USB_DEVICE/App/usbd_custom_hid_if.c ****    *   byte 4 : bits 0..3 hat switch, bits 4..7 padding
+ 100:USB_DEVICE/App/usbd_custom_hid_if.c ****    *   byte 5 : buttons 1..8, bit 0 = button 1
+ 101:USB_DEVICE/App/usbd_custom_hid_if.c ****    * X/Y + Z/Rz is the usual DirectInput pairing for two sticks, so Windows
+ 102:USB_DEVICE/App/usbd_custom_hid_if.c ****    * and anything built on SDL treat this as an ordinary gamepad.
+ 103:USB_DEVICE/App/usbd_custom_hid_if.c ****    */
+ 104:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x05, 0x01,        /* Usage Page (Generic Desktop)         */
+ 105:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x09, 0x05,        /* Usage (Game Pad)                     */
+ 106:USB_DEVICE/App/usbd_custom_hid_if.c ****   0xA1, 0x01,        /* Collection (Application)             */
+ 107:USB_DEVICE/App/usbd_custom_hid_if.c ****   0xA1, 0x00,        /*   Collection (Physical)              */
+ 108:USB_DEVICE/App/usbd_custom_hid_if.c ****   /* ---- four 8-bit analog axes ---- */
+ 109:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x05, 0x01,        /*     Usage Page (Generic Desktop)     */
+ 110:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x09, 0x30,        /*     Usage (X)                        */
+ 111:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x09, 0x31,        /*     Usage (Y)                        */
+ 112:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x09, 0x32,        /*     Usage (Z)                        */
+ 113:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x09, 0x35,        /*     Usage (Rz)                       */
+ 114:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x15, 0x00,        /*     Logical Minimum (0)              */
+ 115:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x26, 0xFF, 0x00,  /*     Logical Maximum (255)            */
+ 116:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x35, 0x00,        /*     Physical Minimum (0)             */
+ 117:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x46, 0xFF, 0x00,  /*     Physical Maximum (255)           */
+ 118:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x75, 0x08,        /*     Report Size (8)                  */
+ 119:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x95, 0x04,        /*     Report Count (4)                 */
+ 120:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x81, 0x02,        /*     Input (Data,Var,Abs)             */
+ 121:USB_DEVICE/App/usbd_custom_hid_if.c ****   /* ---- d-pad as a proper hat switch ---- */
+ 122:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x09, 0x39,        /*     Usage (Hat Switch)               */
+ 123:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x15, 0x00,        /*     Logical Minimum (0)              */
+ 124:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x25, 0x07,        /*     Logical Maximum (7)              */
+ 125:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x35, 0x00,        /*     Physical Minimum (0)             */
+ 126:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x46, 0x3B, 0x01,  /*     Physical Maximum (315 degrees)   */
+ 127:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x65, 0x14,        /*     Unit (Eng Rotation: Degrees)     */
+ 128:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x75, 0x04,        /*     Report Size (4)                  */
+ 129:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x95, 0x01,        /*     Report Count (1)                 */
+ 130:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x81, 0x42,        /*     Input (Data,Var,Abs,Null State)  */
+ 131:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x65, 0x00,        /*     Unit (None)                      */
+ 132:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x75, 0x04,        /*     Report Size (4)                  */
+ 133:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x95, 0x01,        /*     Report Count (1)                 */
+ 134:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x81, 0x03,        /*     Input (Const,Var,Abs) - padding  */
+ 135:USB_DEVICE/App/usbd_custom_hid_if.c ****   /* ---- eight buttons ---- */
+ 136:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x05, 0x09,        /*     Usage Page (Button)              */
+ 137:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x19, 0x01,        /*     Usage Minimum (Button 1)         */
+ 138:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x29, 0x08,        /*     Usage Maximum (Button 8)         */
+ 139:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x15, 0x00,        /*     Logical Minimum (0)              */
+ 140:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x25, 0x01,        /*     Logical Maximum (1)              */
+ 141:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x35, 0x00,        /*     Physical Minimum (0)             */
+ 142:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x45, 0x01,        /*     Physical Maximum (1)             */
+ 143:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x75, 0x01,        /*     Report Size (1)                  */
+ 144:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x95, 0x08,        /*     Report Count (8)                 */
+ 145:USB_DEVICE/App/usbd_custom_hid_if.c ****   0x81, 0x02,        /*     Input (Data,Var,Abs)             */
+ 146:USB_DEVICE/App/usbd_custom_hid_if.c ****   0xC0,              /*   End Collection                     */
+ 147:USB_DEVICE/App/usbd_custom_hid_if.c ****   /* USER CODE END 0 */
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccgbNtZD.s 			page 4
 
 
- 148:USB_DEVICE/App/usbd_custom_hid_if.c **** /* USER CODE END EXPORTED_VARIABLES */
- 149:USB_DEVICE/App/usbd_custom_hid_if.c **** /**
- 150:USB_DEVICE/App/usbd_custom_hid_if.c ****   * @}
- 151:USB_DEVICE/App/usbd_custom_hid_if.c ****   */
- 152:USB_DEVICE/App/usbd_custom_hid_if.c **** 
- 153:USB_DEVICE/App/usbd_custom_hid_if.c **** /** @defgroup USBD_CUSTOM_HID_Private_FunctionPrototypes USBD_CUSTOM_HID_Private_FunctionPrototypes
- 154:USB_DEVICE/App/usbd_custom_hid_if.c ****   * @brief Private functions declaration.
- 155:USB_DEVICE/App/usbd_custom_hid_if.c ****   * @{
- 156:USB_DEVICE/App/usbd_custom_hid_if.c ****   */
- 157:USB_DEVICE/App/usbd_custom_hid_if.c **** 
- 158:USB_DEVICE/App/usbd_custom_hid_if.c **** static int8_t CUSTOM_HID_Init_FS(void);
- 159:USB_DEVICE/App/usbd_custom_hid_if.c **** static int8_t CUSTOM_HID_DeInit_FS(void);
- 160:USB_DEVICE/App/usbd_custom_hid_if.c **** static int8_t CUSTOM_HID_OutEvent_FS(uint8_t event_idx, uint8_t state);
- 161:USB_DEVICE/App/usbd_custom_hid_if.c **** 
- 162:USB_DEVICE/App/usbd_custom_hid_if.c **** /**
- 163:USB_DEVICE/App/usbd_custom_hid_if.c ****   * @}
- 164:USB_DEVICE/App/usbd_custom_hid_if.c ****   */
- 165:USB_DEVICE/App/usbd_custom_hid_if.c **** 
- 166:USB_DEVICE/App/usbd_custom_hid_if.c **** USBD_CUSTOM_HID_ItfTypeDef USBD_CustomHID_fops_FS =
- 167:USB_DEVICE/App/usbd_custom_hid_if.c **** {
- 168:USB_DEVICE/App/usbd_custom_hid_if.c ****   CUSTOM_HID_ReportDesc_FS,
- 169:USB_DEVICE/App/usbd_custom_hid_if.c ****   CUSTOM_HID_Init_FS,
- 170:USB_DEVICE/App/usbd_custom_hid_if.c ****   CUSTOM_HID_DeInit_FS,
- 171:USB_DEVICE/App/usbd_custom_hid_if.c ****   CUSTOM_HID_OutEvent_FS
- 172:USB_DEVICE/App/usbd_custom_hid_if.c **** };
- 173:USB_DEVICE/App/usbd_custom_hid_if.c **** 
- 174:USB_DEVICE/App/usbd_custom_hid_if.c **** /** @defgroup USBD_CUSTOM_HID_Private_Functions USBD_CUSTOM_HID_Private_Functions
- 175:USB_DEVICE/App/usbd_custom_hid_if.c ****   * @brief Private functions.
- 176:USB_DEVICE/App/usbd_custom_hid_if.c ****   * @{
- 177:USB_DEVICE/App/usbd_custom_hid_if.c ****   */
- 178:USB_DEVICE/App/usbd_custom_hid_if.c **** 
- 179:USB_DEVICE/App/usbd_custom_hid_if.c **** /* Private functions ---------------------------------------------------------*/
+ 148:USB_DEVICE/App/usbd_custom_hid_if.c ****   0xC0    /*     END_COLLECTION	             */
+ 149:USB_DEVICE/App/usbd_custom_hid_if.c **** };
+ 150:USB_DEVICE/App/usbd_custom_hid_if.c **** 
+ 151:USB_DEVICE/App/usbd_custom_hid_if.c **** /* USER CODE BEGIN PRIVATE_VARIABLES */
+ 152:USB_DEVICE/App/usbd_custom_hid_if.c **** /* CubeMX regenerates usbd_conf.h and resets USBD_CUSTOM_HID_REPORT_DESC_SIZE to
+ 153:USB_DEVICE/App/usbd_custom_hid_if.c ****  * its default of 2, which silently truncates the descriptor above. Fail the
+ 154:USB_DEVICE/App/usbd_custom_hid_if.c ****  * build instead of shipping a 2-byte report descriptor. */
+ 155:USB_DEVICE/App/usbd_custom_hid_if.c **** _Static_assert(sizeof(CUSTOM_HID_ReportDesc_FS) == 83,
+ 156:USB_DEVICE/App/usbd_custom_hid_if.c ****                "USBD_CUSTOM_HID_REPORT_DESC_SIZE must be 83 - check usbd_conf.h");
+ 157:USB_DEVICE/App/usbd_custom_hid_if.c **** /* USER CODE END PRIVATE_VARIABLES */
+ 158:USB_DEVICE/App/usbd_custom_hid_if.c **** 
+ 159:USB_DEVICE/App/usbd_custom_hid_if.c **** /**
+ 160:USB_DEVICE/App/usbd_custom_hid_if.c ****   * @}
+ 161:USB_DEVICE/App/usbd_custom_hid_if.c ****   */
+ 162:USB_DEVICE/App/usbd_custom_hid_if.c **** 
+ 163:USB_DEVICE/App/usbd_custom_hid_if.c **** /** @defgroup USBD_CUSTOM_HID_Exported_Variables USBD_CUSTOM_HID_Exported_Variables
+ 164:USB_DEVICE/App/usbd_custom_hid_if.c ****   * @brief Public variables.
+ 165:USB_DEVICE/App/usbd_custom_hid_if.c ****   * @{
+ 166:USB_DEVICE/App/usbd_custom_hid_if.c ****   */
+ 167:USB_DEVICE/App/usbd_custom_hid_if.c **** extern USBD_HandleTypeDef hUsbDeviceFS;
+ 168:USB_DEVICE/App/usbd_custom_hid_if.c **** 
+ 169:USB_DEVICE/App/usbd_custom_hid_if.c **** /* USER CODE BEGIN EXPORTED_VARIABLES */
+ 170:USB_DEVICE/App/usbd_custom_hid_if.c **** 
+ 171:USB_DEVICE/App/usbd_custom_hid_if.c **** /* USER CODE END EXPORTED_VARIABLES */
+ 172:USB_DEVICE/App/usbd_custom_hid_if.c **** /**
+ 173:USB_DEVICE/App/usbd_custom_hid_if.c ****   * @}
+ 174:USB_DEVICE/App/usbd_custom_hid_if.c ****   */
+ 175:USB_DEVICE/App/usbd_custom_hid_if.c **** 
+ 176:USB_DEVICE/App/usbd_custom_hid_if.c **** /** @defgroup USBD_CUSTOM_HID_Private_FunctionPrototypes USBD_CUSTOM_HID_Private_FunctionPrototypes
+ 177:USB_DEVICE/App/usbd_custom_hid_if.c ****   * @brief Private functions declaration.
+ 178:USB_DEVICE/App/usbd_custom_hid_if.c ****   * @{
+ 179:USB_DEVICE/App/usbd_custom_hid_if.c ****   */
  180:USB_DEVICE/App/usbd_custom_hid_if.c **** 
- 181:USB_DEVICE/App/usbd_custom_hid_if.c **** /**
- 182:USB_DEVICE/App/usbd_custom_hid_if.c ****   * @brief  Initializes the CUSTOM HID media low layer
- 183:USB_DEVICE/App/usbd_custom_hid_if.c ****   * @retval USBD_OK if all operations are OK else USBD_FAIL
- 184:USB_DEVICE/App/usbd_custom_hid_if.c ****   */
- 185:USB_DEVICE/App/usbd_custom_hid_if.c **** static int8_t CUSTOM_HID_Init_FS(void)
- 186:USB_DEVICE/App/usbd_custom_hid_if.c **** {
-  26              		.loc 1 186 1 view -0
+ 181:USB_DEVICE/App/usbd_custom_hid_if.c **** static int8_t CUSTOM_HID_Init_FS(void);
+ 182:USB_DEVICE/App/usbd_custom_hid_if.c **** static int8_t CUSTOM_HID_DeInit_FS(void);
+ 183:USB_DEVICE/App/usbd_custom_hid_if.c **** static int8_t CUSTOM_HID_OutEvent_FS(uint8_t event_idx, uint8_t state);
+ 184:USB_DEVICE/App/usbd_custom_hid_if.c **** 
+ 185:USB_DEVICE/App/usbd_custom_hid_if.c **** /**
+ 186:USB_DEVICE/App/usbd_custom_hid_if.c ****   * @}
+ 187:USB_DEVICE/App/usbd_custom_hid_if.c ****   */
+ 188:USB_DEVICE/App/usbd_custom_hid_if.c **** 
+ 189:USB_DEVICE/App/usbd_custom_hid_if.c **** USBD_CUSTOM_HID_ItfTypeDef USBD_CustomHID_fops_FS =
+ 190:USB_DEVICE/App/usbd_custom_hid_if.c **** {
+ 191:USB_DEVICE/App/usbd_custom_hid_if.c ****   CUSTOM_HID_ReportDesc_FS,
+ 192:USB_DEVICE/App/usbd_custom_hid_if.c ****   CUSTOM_HID_Init_FS,
+ 193:USB_DEVICE/App/usbd_custom_hid_if.c ****   CUSTOM_HID_DeInit_FS,
+ 194:USB_DEVICE/App/usbd_custom_hid_if.c ****   CUSTOM_HID_OutEvent_FS
+ 195:USB_DEVICE/App/usbd_custom_hid_if.c **** };
+ 196:USB_DEVICE/App/usbd_custom_hid_if.c **** 
+ 197:USB_DEVICE/App/usbd_custom_hid_if.c **** /** @defgroup USBD_CUSTOM_HID_Private_Functions USBD_CUSTOM_HID_Private_Functions
+ 198:USB_DEVICE/App/usbd_custom_hid_if.c ****   * @brief Private functions.
+ 199:USB_DEVICE/App/usbd_custom_hid_if.c ****   * @{
+ 200:USB_DEVICE/App/usbd_custom_hid_if.c ****   */
+ 201:USB_DEVICE/App/usbd_custom_hid_if.c **** 
+ 202:USB_DEVICE/App/usbd_custom_hid_if.c **** /* Private functions ---------------------------------------------------------*/
+ 203:USB_DEVICE/App/usbd_custom_hid_if.c **** 
+ 204:USB_DEVICE/App/usbd_custom_hid_if.c **** /**
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccgbNtZD.s 			page 5
+
+
+ 205:USB_DEVICE/App/usbd_custom_hid_if.c ****   * @brief  Initializes the CUSTOM HID media low layer
+ 206:USB_DEVICE/App/usbd_custom_hid_if.c ****   * @retval USBD_OK if all operations are OK else USBD_FAIL
+ 207:USB_DEVICE/App/usbd_custom_hid_if.c ****   */
+ 208:USB_DEVICE/App/usbd_custom_hid_if.c **** static int8_t CUSTOM_HID_Init_FS(void)
+ 209:USB_DEVICE/App/usbd_custom_hid_if.c **** {
+  26              		.loc 1 209 1 view -0
   27              		.cfi_startproc
   28              		@ args = 0, pretend = 0, frame = 0
   29              		@ frame_needed = 0, uses_anonymous_args = 0
   30              		@ link register save eliminated.
- 187:USB_DEVICE/App/usbd_custom_hid_if.c ****   /* USER CODE BEGIN 4 */
- 188:USB_DEVICE/App/usbd_custom_hid_if.c ****   return (USBD_OK);
-  31              		.loc 1 188 3 view .LVU1
- 189:USB_DEVICE/App/usbd_custom_hid_if.c ****   /* USER CODE END 4 */
- 190:USB_DEVICE/App/usbd_custom_hid_if.c **** }
-  32              		.loc 1 190 1 is_stmt 0 view .LVU2
+ 210:USB_DEVICE/App/usbd_custom_hid_if.c ****   /* USER CODE BEGIN 4 */
+ 211:USB_DEVICE/App/usbd_custom_hid_if.c ****   return (USBD_OK);
+  31              		.loc 1 211 3 view .LVU1
+ 212:USB_DEVICE/App/usbd_custom_hid_if.c ****   /* USER CODE END 4 */
+ 213:USB_DEVICE/App/usbd_custom_hid_if.c **** }
+  32              		.loc 1 213 1 is_stmt 0 view .LVU2
   33 0000 0020     		movs	r0, #0
   34 0002 7047     		bx	lr
   35              		.cfi_endproc
@@ -238,31 +264,28 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccwyOXFL.s 			page 1
   38              		.section	.text.CUSTOM_HID_DeInit_FS,"ax",%progbits
   39              		.align	1
   40              		.syntax unified
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccwyOXFL.s 			page 5
-
-
   41              		.thumb
   42              		.thumb_func
   44              	CUSTOM_HID_DeInit_FS:
   45              	.LFB69:
- 191:USB_DEVICE/App/usbd_custom_hid_if.c **** 
- 192:USB_DEVICE/App/usbd_custom_hid_if.c **** /**
- 193:USB_DEVICE/App/usbd_custom_hid_if.c ****   * @brief  DeInitializes the CUSTOM HID media low layer
- 194:USB_DEVICE/App/usbd_custom_hid_if.c ****   * @retval USBD_OK if all operations are OK else USBD_FAIL
- 195:USB_DEVICE/App/usbd_custom_hid_if.c ****   */
- 196:USB_DEVICE/App/usbd_custom_hid_if.c **** static int8_t CUSTOM_HID_DeInit_FS(void)
- 197:USB_DEVICE/App/usbd_custom_hid_if.c **** {
-  46              		.loc 1 197 1 is_stmt 1 view -0
+ 214:USB_DEVICE/App/usbd_custom_hid_if.c **** 
+ 215:USB_DEVICE/App/usbd_custom_hid_if.c **** /**
+ 216:USB_DEVICE/App/usbd_custom_hid_if.c ****   * @brief  DeInitializes the CUSTOM HID media low layer
+ 217:USB_DEVICE/App/usbd_custom_hid_if.c ****   * @retval USBD_OK if all operations are OK else USBD_FAIL
+ 218:USB_DEVICE/App/usbd_custom_hid_if.c ****   */
+ 219:USB_DEVICE/App/usbd_custom_hid_if.c **** static int8_t CUSTOM_HID_DeInit_FS(void)
+ 220:USB_DEVICE/App/usbd_custom_hid_if.c **** {
+  46              		.loc 1 220 1 is_stmt 1 view -0
   47              		.cfi_startproc
   48              		@ args = 0, pretend = 0, frame = 0
   49              		@ frame_needed = 0, uses_anonymous_args = 0
   50              		@ link register save eliminated.
- 198:USB_DEVICE/App/usbd_custom_hid_if.c ****   /* USER CODE BEGIN 5 */
- 199:USB_DEVICE/App/usbd_custom_hid_if.c ****   return (USBD_OK);
-  51              		.loc 1 199 3 view .LVU4
- 200:USB_DEVICE/App/usbd_custom_hid_if.c ****   /* USER CODE END 5 */
- 201:USB_DEVICE/App/usbd_custom_hid_if.c **** }
-  52              		.loc 1 201 1 is_stmt 0 view .LVU5
+ 221:USB_DEVICE/App/usbd_custom_hid_if.c ****   /* USER CODE BEGIN 5 */
+ 222:USB_DEVICE/App/usbd_custom_hid_if.c ****   return (USBD_OK);
+  51              		.loc 1 222 3 view .LVU4
+ 223:USB_DEVICE/App/usbd_custom_hid_if.c ****   /* USER CODE END 5 */
+ 224:USB_DEVICE/App/usbd_custom_hid_if.c **** }
+  52              		.loc 1 224 1 is_stmt 0 view .LVU5
   53 0000 0020     		movs	r0, #0
   54 0002 7047     		bx	lr
   55              		.cfi_endproc
@@ -275,32 +298,32 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccwyOXFL.s 			page 1
   64              	CUSTOM_HID_OutEvent_FS:
   65              	.LVL0:
   66              	.LFB70:
- 202:USB_DEVICE/App/usbd_custom_hid_if.c **** 
- 203:USB_DEVICE/App/usbd_custom_hid_if.c **** /**
- 204:USB_DEVICE/App/usbd_custom_hid_if.c ****   * @brief  Manage the CUSTOM HID class events
- 205:USB_DEVICE/App/usbd_custom_hid_if.c ****   * @param  event_idx: Event index
- 206:USB_DEVICE/App/usbd_custom_hid_if.c ****   * @param  state: Event state
- 207:USB_DEVICE/App/usbd_custom_hid_if.c ****   * @retval USBD_OK if all operations are OK else USBD_FAIL
- 208:USB_DEVICE/App/usbd_custom_hid_if.c ****   */
- 209:USB_DEVICE/App/usbd_custom_hid_if.c **** static int8_t CUSTOM_HID_OutEvent_FS(uint8_t event_idx, uint8_t state)
- 210:USB_DEVICE/App/usbd_custom_hid_if.c **** {
-  67              		.loc 1 210 1 is_stmt 1 view -0
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccgbNtZD.s 			page 6
+
+
+ 225:USB_DEVICE/App/usbd_custom_hid_if.c **** 
+ 226:USB_DEVICE/App/usbd_custom_hid_if.c **** /**
+ 227:USB_DEVICE/App/usbd_custom_hid_if.c ****   * @brief  Manage the CUSTOM HID class events
+ 228:USB_DEVICE/App/usbd_custom_hid_if.c ****   * @param  event_idx: Event index
+ 229:USB_DEVICE/App/usbd_custom_hid_if.c ****   * @param  state: Event state
+ 230:USB_DEVICE/App/usbd_custom_hid_if.c ****   * @retval USBD_OK if all operations are OK else USBD_FAIL
+ 231:USB_DEVICE/App/usbd_custom_hid_if.c ****   */
+ 232:USB_DEVICE/App/usbd_custom_hid_if.c **** static int8_t CUSTOM_HID_OutEvent_FS(uint8_t event_idx, uint8_t state)
+ 233:USB_DEVICE/App/usbd_custom_hid_if.c **** {
+  67              		.loc 1 233 1 is_stmt 1 view -0
   68              		.cfi_startproc
   69              		@ args = 0, pretend = 0, frame = 0
   70              		@ frame_needed = 0, uses_anonymous_args = 0
   71              		@ link register save eliminated.
- 211:USB_DEVICE/App/usbd_custom_hid_if.c ****   /* USER CODE BEGIN 6 */
- 212:USB_DEVICE/App/usbd_custom_hid_if.c ****   return (USBD_OK);
-  72              		.loc 1 212 3 view .LVU7
- 213:USB_DEVICE/App/usbd_custom_hid_if.c ****   /* USER CODE END 6 */
- 214:USB_DEVICE/App/usbd_custom_hid_if.c **** }
-  73              		.loc 1 214 1 is_stmt 0 view .LVU8
+ 234:USB_DEVICE/App/usbd_custom_hid_if.c ****   /* USER CODE BEGIN 6 */
+ 235:USB_DEVICE/App/usbd_custom_hid_if.c ****   return (USBD_OK);
+  72              		.loc 1 235 3 view .LVU7
+ 236:USB_DEVICE/App/usbd_custom_hid_if.c ****   /* USER CODE END 6 */
+ 237:USB_DEVICE/App/usbd_custom_hid_if.c **** }
+  73              		.loc 1 237 1 is_stmt 0 view .LVU8
   74 0000 0020     		movs	r0, #0
   75              	.LVL1:
-  76              		.loc 1 214 1 view .LVU9
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccwyOXFL.s 			page 6
-
-
+  76              		.loc 1 237 1 view .LVU9
   77 0002 7047     		bx	lr
   78              		.cfi_endproc
   79              	.LFE70:
@@ -313,40 +336,43 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccwyOXFL.s 			page 1
   88              	USBD_CUSTOM_HID_SendReport_FS:
   89              	.LVL2:
   90              	.LFB71:
- 215:USB_DEVICE/App/usbd_custom_hid_if.c **** 
- 216:USB_DEVICE/App/usbd_custom_hid_if.c **** /* USER CODE BEGIN 7 */
- 217:USB_DEVICE/App/usbd_custom_hid_if.c **** /**
- 218:USB_DEVICE/App/usbd_custom_hid_if.c ****   * @brief  Send the report to the Host
- 219:USB_DEVICE/App/usbd_custom_hid_if.c ****   * @param  report: The report to be sent
- 220:USB_DEVICE/App/usbd_custom_hid_if.c ****   * @param  len: The report length
- 221:USB_DEVICE/App/usbd_custom_hid_if.c ****   * @retval USBD_OK if all operations are OK else USBD_FAIL
- 222:USB_DEVICE/App/usbd_custom_hid_if.c ****   */
- 223:USB_DEVICE/App/usbd_custom_hid_if.c **** int8_t USBD_CUSTOM_HID_SendReport_FS(uint8_t *report, uint16_t len)
- 224:USB_DEVICE/App/usbd_custom_hid_if.c **** {
-  91              		.loc 1 224 1 is_stmt 1 view -0
+ 238:USB_DEVICE/App/usbd_custom_hid_if.c **** 
+ 239:USB_DEVICE/App/usbd_custom_hid_if.c **** /* USER CODE BEGIN 7 */
+ 240:USB_DEVICE/App/usbd_custom_hid_if.c **** /**
+ 241:USB_DEVICE/App/usbd_custom_hid_if.c ****   * @brief  Send the report to the Host
+ 242:USB_DEVICE/App/usbd_custom_hid_if.c ****   * @param  report: The report to be sent
+ 243:USB_DEVICE/App/usbd_custom_hid_if.c ****   * @param  len: The report length
+ 244:USB_DEVICE/App/usbd_custom_hid_if.c ****   * @retval USBD_OK if all operations are OK else USBD_FAIL
+ 245:USB_DEVICE/App/usbd_custom_hid_if.c ****   */
+ 246:USB_DEVICE/App/usbd_custom_hid_if.c **** int8_t USBD_CUSTOM_HID_SendReport_FS(uint8_t *report, uint16_t len)
+ 247:USB_DEVICE/App/usbd_custom_hid_if.c **** {
+  91              		.loc 1 247 1 is_stmt 1 view -0
   92              		.cfi_startproc
   93              		@ args = 0, pretend = 0, frame = 0
   94              		@ frame_needed = 0, uses_anonymous_args = 0
-  95              		.loc 1 224 1 is_stmt 0 view .LVU11
+  95              		.loc 1 247 1 is_stmt 0 view .LVU11
   96 0000 08B5     		push	{r3, lr}
   97              	.LCFI0:
   98              		.cfi_def_cfa_offset 8
   99              		.cfi_offset 3, -8
  100              		.cfi_offset 14, -4
  101 0002 0A46     		mov	r2, r1
- 225:USB_DEVICE/App/usbd_custom_hid_if.c ****   return USBD_CUSTOM_HID_SendReport(&hUsbDeviceFS, report, len);
- 102              		.loc 1 225 3 is_stmt 1 view .LVU12
- 103              		.loc 1 225 10 is_stmt 0 view .LVU13
+ 248:USB_DEVICE/App/usbd_custom_hid_if.c ****   return USBD_CUSTOM_HID_SendReport(&hUsbDeviceFS, report, len);
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccgbNtZD.s 			page 7
+
+
+ 102              		.loc 1 248 3 is_stmt 1 view .LVU12
+ 103              		.loc 1 248 10 is_stmt 0 view .LVU13
  104 0004 0146     		mov	r1, r0
  105              	.LVL3:
- 106              		.loc 1 225 10 view .LVU14
+ 106              		.loc 1 248 10 view .LVU14
  107 0006 0248     		ldr	r0, .L6
  108              	.LVL4:
- 109              		.loc 1 225 10 view .LVU15
+ 109              		.loc 1 248 10 view .LVU15
  110 0008 FFF7FEFF 		bl	USBD_CUSTOM_HID_SendReport
  111              	.LVL5:
- 226:USB_DEVICE/App/usbd_custom_hid_if.c **** }
- 112              		.loc 1 226 1 view .LVU16
+ 249:USB_DEVICE/App/usbd_custom_hid_if.c **** }
+ 112              		.loc 1 249 1 view .LVU16
  113 000c 40B2     		sxtb	r0, r0
  114 000e 08BD     		pop	{r3, pc}
  115              	.L7:
@@ -358,9 +384,6 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccwyOXFL.s 			page 1
  122              		.global	USBD_CustomHID_fops_FS
  123              		.section	.data.USBD_CustomHID_fops_FS,"aw"
  124              		.align	2
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccwyOXFL.s 			page 7
-
-
  127              	USBD_CustomHID_fops_FS:
  128 0000 00000000 		.word	CUSTOM_HID_ReportDesc_FS
  129 0004 00000000 		.word	CUSTOM_HID_Init_FS
@@ -373,40 +396,52 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccwyOXFL.s 			page 1
  137      A101A100 
  137      05010930 
  137      093109
- 138 000f 33093415 		.ascii	"3\0114\025\000&\377\000u\010\225\004\201\002\005\011"
+ 138 000f 32093515 		.ascii	"2\0115\025\000&\377\0005\000F\377\000u\010\225\004\201"
  138      0026FF00 
- 138      75089504 
- 138      81020509 
- 139 001f 19012908 		.ascii	"\031\001)\010\025\000%\001u\001\225\010\201\002\300"
- 139      15002501 
- 139      75019508 
- 139      8102C0
- 140 002e C0       		.ascii	"\300"
- 141              		.text
- 142              	.Letext0:
- 143              		.file 2 "C:/msys64/mingw64/arm-none-eabi/include/machine/_default_types.h"
- 144              		.file 3 "C:/msys64/mingw64/arm-none-eabi/include/sys/_stdint.h"
- 145              		.file 4 "Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h"
- 146              		.file 5 "Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc/usbd_customhid.h"
- 147              		.file 6 "USB_DEVICE/App/usbd_custom_hid_if.h"
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccwyOXFL.s 			page 8
+ 138      350046FF 
+ 138      00750895 
+ 138      0481
+ 139 0021 02093915 		.ascii	"\002\0119\025\000%\0075\000F;\001e\024u\004\225\001"
+ 139      00250735 
+ 139      00463B01 
+ 139      65147504 
+ 139      9501
+ 140 0033 81426500 		.ascii	"\201Be\000u\004\225\001\201\003\005\011\031\001)\010"
+ 140      75049501 
+ 140      81030509 
+ 140      19012908 
+ 141 0043 15002501 		.ascii	"\025\000%\0015\000E\001u\001\225\010\201\002\300\300"
+ 141      35004501 
+ 141      75019508 
+ 141      8102C0C0 
+ 142              		.text
+ 143              	.Letext0:
+ 144              		.file 2 "C:/msys64/mingw64/arm-none-eabi/include/machine/_default_types.h"
+ 145              		.file 3 "C:/msys64/mingw64/arm-none-eabi/include/sys/_stdint.h"
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccgbNtZD.s 			page 8
+
+
+ 146              		.file 4 "Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h"
+ 147              		.file 5 "Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc/usbd_customhid.h"
+ 148              		.file 6 "USB_DEVICE/App/usbd_custom_hid_if.h"
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccgbNtZD.s 			page 9
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 usbd_custom_hid_if.c
-C:\Users\jonar\AppData\Local\Temp\ccwyOXFL.s:19     .text.CUSTOM_HID_Init_FS:00000000 $t
-C:\Users\jonar\AppData\Local\Temp\ccwyOXFL.s:24     .text.CUSTOM_HID_Init_FS:00000000 CUSTOM_HID_Init_FS
-C:\Users\jonar\AppData\Local\Temp\ccwyOXFL.s:39     .text.CUSTOM_HID_DeInit_FS:00000000 $t
-C:\Users\jonar\AppData\Local\Temp\ccwyOXFL.s:44     .text.CUSTOM_HID_DeInit_FS:00000000 CUSTOM_HID_DeInit_FS
-C:\Users\jonar\AppData\Local\Temp\ccwyOXFL.s:59     .text.CUSTOM_HID_OutEvent_FS:00000000 $t
-C:\Users\jonar\AppData\Local\Temp\ccwyOXFL.s:64     .text.CUSTOM_HID_OutEvent_FS:00000000 CUSTOM_HID_OutEvent_FS
-C:\Users\jonar\AppData\Local\Temp\ccwyOXFL.s:82     .text.USBD_CUSTOM_HID_SendReport_FS:00000000 $t
-C:\Users\jonar\AppData\Local\Temp\ccwyOXFL.s:88     .text.USBD_CUSTOM_HID_SendReport_FS:00000000 USBD_CUSTOM_HID_SendReport_FS
-C:\Users\jonar\AppData\Local\Temp\ccwyOXFL.s:118    .text.USBD_CUSTOM_HID_SendReport_FS:00000010 $d
-C:\Users\jonar\AppData\Local\Temp\ccwyOXFL.s:127    .data.USBD_CustomHID_fops_FS:00000000 USBD_CustomHID_fops_FS
-C:\Users\jonar\AppData\Local\Temp\ccwyOXFL.s:124    .data.USBD_CustomHID_fops_FS:00000000 $d
-C:\Users\jonar\AppData\Local\Temp\ccwyOXFL.s:136    .data.CUSTOM_HID_ReportDesc_FS:00000000 CUSTOM_HID_ReportDesc_FS
-C:\Users\jonar\AppData\Local\Temp\ccwyOXFL.s:133    .data.CUSTOM_HID_ReportDesc_FS:00000000 $d
+C:\Users\jonar\AppData\Local\Temp\ccgbNtZD.s:19     .text.CUSTOM_HID_Init_FS:00000000 $t
+C:\Users\jonar\AppData\Local\Temp\ccgbNtZD.s:24     .text.CUSTOM_HID_Init_FS:00000000 CUSTOM_HID_Init_FS
+C:\Users\jonar\AppData\Local\Temp\ccgbNtZD.s:39     .text.CUSTOM_HID_DeInit_FS:00000000 $t
+C:\Users\jonar\AppData\Local\Temp\ccgbNtZD.s:44     .text.CUSTOM_HID_DeInit_FS:00000000 CUSTOM_HID_DeInit_FS
+C:\Users\jonar\AppData\Local\Temp\ccgbNtZD.s:59     .text.CUSTOM_HID_OutEvent_FS:00000000 $t
+C:\Users\jonar\AppData\Local\Temp\ccgbNtZD.s:64     .text.CUSTOM_HID_OutEvent_FS:00000000 CUSTOM_HID_OutEvent_FS
+C:\Users\jonar\AppData\Local\Temp\ccgbNtZD.s:82     .text.USBD_CUSTOM_HID_SendReport_FS:00000000 $t
+C:\Users\jonar\AppData\Local\Temp\ccgbNtZD.s:88     .text.USBD_CUSTOM_HID_SendReport_FS:00000000 USBD_CUSTOM_HID_SendReport_FS
+C:\Users\jonar\AppData\Local\Temp\ccgbNtZD.s:118    .text.USBD_CUSTOM_HID_SendReport_FS:00000010 $d
+C:\Users\jonar\AppData\Local\Temp\ccgbNtZD.s:127    .data.USBD_CustomHID_fops_FS:00000000 USBD_CustomHID_fops_FS
+C:\Users\jonar\AppData\Local\Temp\ccgbNtZD.s:124    .data.USBD_CustomHID_fops_FS:00000000 $d
+C:\Users\jonar\AppData\Local\Temp\ccgbNtZD.s:136    .data.CUSTOM_HID_ReportDesc_FS:00000000 CUSTOM_HID_ReportDesc_FS
+C:\Users\jonar\AppData\Local\Temp\ccgbNtZD.s:133    .data.CUSTOM_HID_ReportDesc_FS:00000000 $d
 
 UNDEFINED SYMBOLS
 USBD_CUSTOM_HID_SendReport

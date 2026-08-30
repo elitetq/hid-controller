@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 1
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 1
   30:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c ****   * All rights reserved.</center></h2>
   31:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c ****   *
   32:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c ****   * This software component is licensed by ST under Ultimate Liberty license
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 2
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s 			page 2
 
 
   33:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c ****   * SLA0044, the "License"; You may not use this file except in compliance with
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 1
   87:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c **** 
   88:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c **** static uint8_t  USBD_CUSTOM_HID_Init(USBD_HandleTypeDef *pdev,
   89:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c ****                                      uint8_t cfgidx);
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 3
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s 			page 3
 
 
   90:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c **** 
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 1
  144:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c ****   0x01,         /*bConfigurationValue: Configuration value*/
  145:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c ****   0x00,         /*iConfiguration: Index of string descriptor describing
  146:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c ****   the configuration*/
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 4
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s 			page 4
 
 
  147:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c ****   0xC0,         /*bmAttributes: bus powered */
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 1
  201:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c ****   0x00,
  202:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c ****   0x01,         /*bNumInterfaces: 1 interface*/
  203:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c ****   0x01,         /*bConfigurationValue: Configuration value*/
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 5
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s 			page 5
 
 
  204:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c ****   0x00,         /*iConfiguration: Index of string descriptor describing
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 1
  258:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c ****   USB_CUSTOM_HID_CONFIG_DESC_SIZ,
  259:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c ****   /* wTotalLength: Bytes returned */
  260:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c ****   0x00,
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 6
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s 			page 6
 
 
  261:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c ****   0x01,         /*bNumInterfaces: 1 interface*/
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 1
  315:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c ****   /* 18 */
  316:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c ****   0x09,         /*bLength: CUSTOM_HID Descriptor size*/
  317:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c ****   CUSTOM_HID_DESCRIPTOR_TYPE, /*bDescriptorType: CUSTOM_HID*/
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 7
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s 			page 7
 
 
  318:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c ****   0x11,         /*bCUSTOM_HIDUSTOM_HID: CUSTOM_HID Class Spec release number*/
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 1
  372:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c **** 
  373:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c ****   pdev->ep_out[CUSTOM_HID_EPOUT_ADDR & 0xFU].is_used = 1U;
  374:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c **** 
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 8
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s 			page 8
 
 
  375:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c ****   pdev->pClassData = USBD_malloc(sizeof(USBD_CUSTOM_HID_HandleTypeDef));
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 1
  429:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c ****   * @retval status
  430:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c ****   */
  431:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c **** static uint8_t  USBD_CUSTOM_HID_Setup(USBD_HandleTypeDef *pdev,
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 9
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s 			page 9
 
 
  432:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c ****                                       USBD_SetupReqTypedef *req)
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 1
  486:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c ****           break;
  487:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c **** 
  488:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c ****         case USB_REQ_GET_DESCRIPTOR:
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 10
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s 			page 10
 
 
  489:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c ****           if (req->wValue >> 8 == CUSTOM_HID_REPORT_DESC)
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 1
  543:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c **** }
  544:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c **** 
  545:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c **** /**
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 11
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s 			page 11
 
 
  546:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c ****   * @brief  USBD_CUSTOM_HID_SendReport
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 1
   42              	.L3:
   43              		.align	2
   44              	.L2:
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 12
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s 			page 12
 
 
   45 0008 00000000 		.word	USBD_CUSTOM_HID_CfgFSDesc
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 1
  599:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c **** /**
  600:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c ****   * @brief  USBD_CUSTOM_HID_GetOtherSpeedCfgDesc
  601:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c ****   *         return other speed configuration descriptor
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 13
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s 			page 13
 
 
  602:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c ****   * @param  speed : current device speed
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 1
  622:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c ****   /* Ensure that the FIFO is empty before a new transfer, this condition could
  623:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c ****   be caused by  a new transfer before the end of the previous transfer */
  624:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c ****   ((USBD_CUSTOM_HID_HandleTypeDef *)pdev->pClassData)->state = CUSTOM_HID_IDLE;
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 14
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s 			page 14
 
 
  125              		.loc 1 624 3 view .LVU19
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 1
  658:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c **** {
  148              		.loc 1 658 1 is_stmt 1 view -0
  149              		.cfi_startproc
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 15
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s 			page 15
 
 
  150              		@ args = 0, pretend = 0, frame = 0
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 1
  665:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c ****   }
  188              		.loc 1 665 5 is_stmt 1 view .LVU39
  665:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c ****   }
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 16
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s 			page 16
 
 
  189              		.loc 1 665 29 is_stmt 0 view .LVU40
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 1
  235              	.LFB76:
  638:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c **** 
  236              		.loc 1 638 1 is_stmt 1 view -0
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 17
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s 			page 17
 
 
  237              		.cfi_startproc
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 1
  278              		.loc 1 649 1 view .LVU60
  279              		.cfi_endproc
  280              	.LFE76:
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 18
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s 			page 18
 
 
  282              		.section	.text.USBD_CUSTOM_HID_Setup,"ax",%progbits
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 1
  325 0018 7CD1     		bne	.L22
  443:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c ****       {
  326              		.loc 1 443 7 is_stmt 1 view .LVU73
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 19
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s 			page 19
 
 
  443:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c ****       {
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 1
  368              		.loc 1 451 11 view .LVU86
  369 0042 6AE0     		b	.L30
  370              	.LVL27:
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 20
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s 			page 20
 
 
  371              	.L26:
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 1
  409              	.LVL32:
  464:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c **** 
  410              		.loc 1 464 11 is_stmt 1 view .LVU103
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 21
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s 			page 21
 
 
  438:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c **** 
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 1
  477:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c ****           {
  453              		.loc 1 477 14 view .LVU116
  454 008e 032B     		cmp	r3, #3
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 22
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s 			page 22
 
 
  455 0090 03D0     		beq	.L44
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 1
  495              	.L39:
  503:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c ****           break;
  496              		.loc 1 503 11 is_stmt 1 view .LVU131
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 23
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s 			page 23
 
 
  497 00b8 FFF7FEFF 		bl	USBD_CtlSendData
@@ -1335,9 +1335,9 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 1
  505 00be CA88     		ldrh	r2, [r1, #6]
  491:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c ****             pbuf = ((USBD_CUSTOM_HID_ItfTypeDef *)pdev->pUserData)->pReport;
  506              		.loc 1 491 17 view .LVU135
- 507 00c0 2F2A     		cmp	r2, #47
+ 507 00c0 532A     		cmp	r2, #83
  508 00c2 28BF     		it	cs
- 509 00c4 2F22     		movcs	r2, #47
+ 509 00c4 5322     		movcs	r2, #83
  510              	.LVL45:
  492:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c ****           }
  511              		.loc 1 492 13 is_stmt 1 view .LVU136
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 1
  507:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c ****           {
  537              		.loc 1 507 11 is_stmt 1 view .LVU146
  507:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c ****           {
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 24
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s 			page 24
 
 
  538              		.loc 1 507 19 is_stmt 0 view .LVU147
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 1
  578              	.LVL56:
  526:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c ****           }
  579              		.loc 1 526 13 view .LVU162
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 25
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s 			page 25
 
 
  526:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c ****           }
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 1
  622              		.section	.text.USBD_CUSTOM_HID_DeInit,"ax",%progbits
  623              		.align	1
  624              		.syntax unified
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 26
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s 			page 26
 
 
  625              		.thumb
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 1
  667              		.loc 1 417 5 is_stmt 1 view .LVU188
  417:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c ****     USBD_free(pdev->pClassData);
  668              		.loc 1 417 40 is_stmt 0 view .LVU189
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 27
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s 			page 27
 
 
  669 0020 D4F8BC32 		ldr	r3, [r4, #700]
@@ -1618,12 +1618,12 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 1
  714              	.LVL70:
  361:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c **** 
  715              		.loc 1 361 3 view .LVU201
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 28
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s 			page 28
 
 
  364:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c ****                  CUSTOM_HID_EPIN_SIZE);
  716              		.loc 1 364 3 view .LVU202
- 717 0004 0823     		movs	r3, #8
+ 717 0004 0223     		movs	r3, #2
  718 0006 0322     		movs	r2, #3
  719 0008 8121     		movs	r1, #129
  720              	.LVL71:
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 1
  386:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c **** 
  755              		.loc 1 386 5 is_stmt 1 view .LVU217
  386:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c **** 
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 29
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s 			page 29
 
 
  756              		.loc 1 386 40 is_stmt 0 view .LVU218
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 1
  803              		.cfi_offset 3, -16
  804              		.cfi_offset 4, -12
  805              		.cfi_offset 5, -8
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 30
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s 			page 30
 
 
  806              		.cfi_offset 14, -4
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 1
  845              	.LVL85:
  563:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c ****     }
  846              		.loc 1 563 7 view .LVU243
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 31
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s 			page 31
 
 
  847 0026 FFF7FEFF 		bl	USBD_LL_Transmit
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 1
  885              		.loc 1 692 12 view .LVU254
  886 000a 0220     		movs	r0, #2
  887              	.LVL91:
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 32
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s 			page 32
 
 
  698:Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c ****   }
@@ -1879,8 +1879,8 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 1
  900              		.section	.data.USBD_CUSTOM_HID_Desc,"aw"
  901              		.align	2
  904              	USBD_CUSTOM_HID_Desc:
- 905 0000 09211101 		.ascii	"\011!\021\001\000\001\"/\000"
- 905      0001222F 
+ 905 0000 09211101 		.ascii	"\011!\021\001\000\001\"S\000"
+ 905      00012253 
  905      00
  906              		.section	.data.USBD_CUSTOM_HID_OtherSpeedCfgDesc,"aw"
  907              		.align	2
@@ -1889,11 +1889,11 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 1
  911      010100C0 
  911      32090400 
  911      000203
- 912 000f 00000009 		.ascii	"\000\000\000\011!\021\001\000\001\"/\000\007\005\201"
+ 912 000f 00000009 		.ascii	"\000\000\000\011!\021\001\000\001\"S\000\007\005\201"
  912      21110100 
- 912      01222F00 
+ 912      01225300 
  912      070581
- 913 001e 03080001 		.ascii	"\003\010\000\001\007\005\001\003\002\000\001"
+ 913 001e 03020001 		.ascii	"\003\002\000\001\007\005\001\003\002\000\001"
  913      07050103 
  913      020001
  914              		.section	.data.USBD_CUSTOM_HID_CfgHSDesc,"aw"
@@ -1903,11 +1903,11 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 1
  919      010100C0 
  919      32090400 
  919      000203
- 920 000f 00000009 		.ascii	"\000\000\000\011!\021\001\000\001\"/\000\007\005\201"
+ 920 000f 00000009 		.ascii	"\000\000\000\011!\021\001\000\001\"S\000\007\005\201"
  920      21110100 
- 920      01222F00 
+ 920      01225300 
  920      070581
- 921 001e 03080005 		.ascii	"\003\010\000\005\007\005\001\003\002\000\005"
+ 921 001e 03020005 		.ascii	"\003\002\000\005\007\005\001\003\002\000\005"
  921      07050103 
  921      020005
  922              		.section	.data.USBD_CUSTOM_HID_CfgFSDesc,"aw"
@@ -1917,14 +1917,14 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 1
  927      010100C0 
  927      32090400 
  927      000203
- 928 000f 00000009 		.ascii	"\000\000\000\011!\021\001\000\001\"/\000\007\005\201"
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 33
+ 928 000f 00000009 		.ascii	"\000\000\000\011!\021\001\000\001\"S\000\007\005\201"
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s 			page 33
 
 
  928      21110100 
- 928      01222F00 
+ 928      01225300 
  928      070581
- 929 001e 03080001 		.ascii	"\003\010\000\001\007\005\001\003\002\000\001"
+ 929 001e 03020001 		.ascii	"\003\002\000\001\007\005\001\003\002\000\001"
  929      07050103 
  929      020001
  930              		.global	USBD_CUSTOM_HID
@@ -1955,56 +1955,56 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 1
  957              		.file 7 "USB_DEVICE/Target/usbd_conf.h"
  958              		.file 8 "Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h"
  959              		.file 9 "Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h"
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 34
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s 			page 34
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 usbd_customhid.c
-C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s:19     .text.USBD_CUSTOM_HID_GetFSCfgDesc:00000000 $t
-C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s:24     .text.USBD_CUSTOM_HID_GetFSCfgDesc:00000000 USBD_CUSTOM_HID_GetFSCfgDesc
-C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s:45     .text.USBD_CUSTOM_HID_GetFSCfgDesc:00000008 $d
-C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s:926    .data.USBD_CUSTOM_HID_CfgFSDesc:00000000 USBD_CUSTOM_HID_CfgFSDesc
-C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s:50     .text.USBD_CUSTOM_HID_GetHSCfgDesc:00000000 $t
-C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s:55     .text.USBD_CUSTOM_HID_GetHSCfgDesc:00000000 USBD_CUSTOM_HID_GetHSCfgDesc
-C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s:76     .text.USBD_CUSTOM_HID_GetHSCfgDesc:00000008 $d
-C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s:918    .data.USBD_CUSTOM_HID_CfgHSDesc:00000000 USBD_CUSTOM_HID_CfgHSDesc
-C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s:81     .text.USBD_CUSTOM_HID_GetOtherSpeedCfgDesc:00000000 $t
-C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s:86     .text.USBD_CUSTOM_HID_GetOtherSpeedCfgDesc:00000000 USBD_CUSTOM_HID_GetOtherSpeedCfgDesc
-C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s:107    .text.USBD_CUSTOM_HID_GetOtherSpeedCfgDesc:00000008 $d
-C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s:910    .data.USBD_CUSTOM_HID_OtherSpeedCfgDesc:00000000 USBD_CUSTOM_HID_OtherSpeedCfgDesc
-C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s:112    .text.USBD_CUSTOM_HID_DataIn:00000000 $t
-C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s:117    .text.USBD_CUSTOM_HID_DataIn:00000000 USBD_CUSTOM_HID_DataIn
-C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s:140    .text.USBD_CUSTOM_HID_EP0_RxReady:00000000 $t
-C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s:145    .text.USBD_CUSTOM_HID_EP0_RxReady:00000000 USBD_CUSTOM_HID_EP0_RxReady
-C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s:197    .text.USBD_CUSTOM_HID_GetDeviceQualifierDesc:00000000 $t
-C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s:202    .text.USBD_CUSTOM_HID_GetDeviceQualifierDesc:00000000 USBD_CUSTOM_HID_GetDeviceQualifierDesc
-C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s:223    .text.USBD_CUSTOM_HID_GetDeviceQualifierDesc:00000008 $d
-C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s:898    .data.USBD_CUSTOM_HID_DeviceQualifierDesc:00000000 USBD_CUSTOM_HID_DeviceQualifierDesc
-C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s:228    .text.USBD_CUSTOM_HID_DataOut:00000000 $t
-C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s:233    .text.USBD_CUSTOM_HID_DataOut:00000000 USBD_CUSTOM_HID_DataOut
-C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s:283    .text.USBD_CUSTOM_HID_Setup:00000000 $t
-C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s:288    .text.USBD_CUSTOM_HID_Setup:00000000 USBD_CUSTOM_HID_Setup
-C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s:335    .text.USBD_CUSTOM_HID_Setup:00000026 $d
-C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s:345    .text.USBD_CUSTOM_HID_Setup:00000030 $t
-C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s:436    .text.USBD_CUSTOM_HID_Setup:0000007e $d
-C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s:448    .text.USBD_CUSTOM_HID_Setup:0000008a $t
-C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s:618    .text.USBD_CUSTOM_HID_Setup:00000120 $d
-C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s:904    .data.USBD_CUSTOM_HID_Desc:00000000 USBD_CUSTOM_HID_Desc
-C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s:623    .text.USBD_CUSTOM_HID_DeInit:00000000 $t
-C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s:628    .text.USBD_CUSTOM_HID_DeInit:00000000 USBD_CUSTOM_HID_DeInit
-C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s:692    .text.USBD_CUSTOM_HID_Init:00000000 $t
-C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s:697    .text.USBD_CUSTOM_HID_Init:00000000 USBD_CUSTOM_HID_Init
-C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s:786    .text.USBD_CUSTOM_HID_SendReport:00000000 $t
-C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s:792    .text.USBD_CUSTOM_HID_SendReport:00000000 USBD_CUSTOM_HID_SendReport
-C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s:855    .text.USBD_CUSTOM_HID_RegisterInterface:00000000 $t
-C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s:861    .text.USBD_CUSTOM_HID_RegisterInterface:00000000 USBD_CUSTOM_HID_RegisterInterface
-C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s:895    .data.USBD_CUSTOM_HID_DeviceQualifierDesc:00000000 $d
-C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s:901    .data.USBD_CUSTOM_HID_Desc:00000000 $d
-C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s:907    .data.USBD_CUSTOM_HID_OtherSpeedCfgDesc:00000000 $d
-C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s:915    .data.USBD_CUSTOM_HID_CfgHSDesc:00000000 $d
-C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s:923    .data.USBD_CUSTOM_HID_CfgFSDesc:00000000 $d
-C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s:935    .data.USBD_CUSTOM_HID:00000000 USBD_CUSTOM_HID
-C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s:932    .data.USBD_CUSTOM_HID:00000000 $d
+C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s:19     .text.USBD_CUSTOM_HID_GetFSCfgDesc:00000000 $t
+C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s:24     .text.USBD_CUSTOM_HID_GetFSCfgDesc:00000000 USBD_CUSTOM_HID_GetFSCfgDesc
+C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s:45     .text.USBD_CUSTOM_HID_GetFSCfgDesc:00000008 $d
+C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s:926    .data.USBD_CUSTOM_HID_CfgFSDesc:00000000 USBD_CUSTOM_HID_CfgFSDesc
+C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s:50     .text.USBD_CUSTOM_HID_GetHSCfgDesc:00000000 $t
+C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s:55     .text.USBD_CUSTOM_HID_GetHSCfgDesc:00000000 USBD_CUSTOM_HID_GetHSCfgDesc
+C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s:76     .text.USBD_CUSTOM_HID_GetHSCfgDesc:00000008 $d
+C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s:918    .data.USBD_CUSTOM_HID_CfgHSDesc:00000000 USBD_CUSTOM_HID_CfgHSDesc
+C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s:81     .text.USBD_CUSTOM_HID_GetOtherSpeedCfgDesc:00000000 $t
+C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s:86     .text.USBD_CUSTOM_HID_GetOtherSpeedCfgDesc:00000000 USBD_CUSTOM_HID_GetOtherSpeedCfgDesc
+C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s:107    .text.USBD_CUSTOM_HID_GetOtherSpeedCfgDesc:00000008 $d
+C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s:910    .data.USBD_CUSTOM_HID_OtherSpeedCfgDesc:00000000 USBD_CUSTOM_HID_OtherSpeedCfgDesc
+C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s:112    .text.USBD_CUSTOM_HID_DataIn:00000000 $t
+C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s:117    .text.USBD_CUSTOM_HID_DataIn:00000000 USBD_CUSTOM_HID_DataIn
+C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s:140    .text.USBD_CUSTOM_HID_EP0_RxReady:00000000 $t
+C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s:145    .text.USBD_CUSTOM_HID_EP0_RxReady:00000000 USBD_CUSTOM_HID_EP0_RxReady
+C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s:197    .text.USBD_CUSTOM_HID_GetDeviceQualifierDesc:00000000 $t
+C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s:202    .text.USBD_CUSTOM_HID_GetDeviceQualifierDesc:00000000 USBD_CUSTOM_HID_GetDeviceQualifierDesc
+C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s:223    .text.USBD_CUSTOM_HID_GetDeviceQualifierDesc:00000008 $d
+C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s:898    .data.USBD_CUSTOM_HID_DeviceQualifierDesc:00000000 USBD_CUSTOM_HID_DeviceQualifierDesc
+C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s:228    .text.USBD_CUSTOM_HID_DataOut:00000000 $t
+C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s:233    .text.USBD_CUSTOM_HID_DataOut:00000000 USBD_CUSTOM_HID_DataOut
+C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s:283    .text.USBD_CUSTOM_HID_Setup:00000000 $t
+C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s:288    .text.USBD_CUSTOM_HID_Setup:00000000 USBD_CUSTOM_HID_Setup
+C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s:335    .text.USBD_CUSTOM_HID_Setup:00000026 $d
+C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s:345    .text.USBD_CUSTOM_HID_Setup:00000030 $t
+C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s:436    .text.USBD_CUSTOM_HID_Setup:0000007e $d
+C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s:448    .text.USBD_CUSTOM_HID_Setup:0000008a $t
+C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s:618    .text.USBD_CUSTOM_HID_Setup:00000120 $d
+C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s:904    .data.USBD_CUSTOM_HID_Desc:00000000 USBD_CUSTOM_HID_Desc
+C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s:623    .text.USBD_CUSTOM_HID_DeInit:00000000 $t
+C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s:628    .text.USBD_CUSTOM_HID_DeInit:00000000 USBD_CUSTOM_HID_DeInit
+C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s:692    .text.USBD_CUSTOM_HID_Init:00000000 $t
+C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s:697    .text.USBD_CUSTOM_HID_Init:00000000 USBD_CUSTOM_HID_Init
+C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s:786    .text.USBD_CUSTOM_HID_SendReport:00000000 $t
+C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s:792    .text.USBD_CUSTOM_HID_SendReport:00000000 USBD_CUSTOM_HID_SendReport
+C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s:855    .text.USBD_CUSTOM_HID_RegisterInterface:00000000 $t
+C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s:861    .text.USBD_CUSTOM_HID_RegisterInterface:00000000 USBD_CUSTOM_HID_RegisterInterface
+C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s:895    .data.USBD_CUSTOM_HID_DeviceQualifierDesc:00000000 $d
+C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s:901    .data.USBD_CUSTOM_HID_Desc:00000000 $d
+C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s:907    .data.USBD_CUSTOM_HID_OtherSpeedCfgDesc:00000000 $d
+C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s:915    .data.USBD_CUSTOM_HID_CfgHSDesc:00000000 $d
+C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s:923    .data.USBD_CUSTOM_HID_CfgFSDesc:00000000 $d
+C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s:935    .data.USBD_CUSTOM_HID:00000000 USBD_CUSTOM_HID
+C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s:932    .data.USBD_CUSTOM_HID:00000000 $d
 
 UNDEFINED SYMBOLS
 USBD_LL_PrepareReceive
@@ -2015,7 +2015,7 @@ USBD_LL_CloseEP
 USBD_static_free
 USBD_LL_OpenEP
 USBD_static_malloc
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccxnEwuZ.s 			page 35
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccW6qUqW.s 			page 35
 
 
 USBD_LL_Transmit
