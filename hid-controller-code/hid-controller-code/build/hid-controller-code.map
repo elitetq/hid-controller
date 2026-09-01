@@ -2715,36 +2715,36 @@ LOAD C:/msys64/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/thumb/v7-m/nofp\libgc
  .debug_str     0x0000576b        0x0 C:/msys64/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-init.o)
                                 0x1e0 (size before relaxing)
 
-.debug_frame    0x00000000     0x31d8
- .debug_frame   0x00000000      0x130 build/main.o
- .debug_frame   0x00000130       0xe0 build/stm32f1xx_it.o
- .debug_frame   0x00000210       0xb4 build/stm32f1xx_hal_msp.o
- .debug_frame   0x000002c4      0x2c8 build/stm32f1xx_hal_adc.o
- .debug_frame   0x0000058c      0x19c build/stm32f1xx_hal_adc_ex.o
- .debug_frame   0x00000728      0x1cc build/stm32f1xx_hal.o
- .debug_frame   0x000008f4      0x184 build/stm32f1xx_hal_rcc.o
- .debug_frame   0x00000a78       0x5c build/stm32f1xx_hal_rcc_ex.o
- .debug_frame   0x00000ad4       0xe4 build/stm32f1xx_hal_gpio.o
- .debug_frame   0x00000bb8      0x144 build/stm32f1xx_hal_dma.o
- .debug_frame   0x00000cfc      0x19c build/stm32f1xx_hal_cortex.o
- .debug_frame   0x00000e98      0x140 build/stm32f1xx_hal_pwr.o
- .debug_frame   0x00000fd8      0x358 build/stm32f1xx_hal_pcd.o
- .debug_frame   0x00001330       0x50 build/stm32f1xx_hal_pcd_ex.o
- .debug_frame   0x00001380      0x200 build/stm32f1xx_ll_usb.o
- .debug_frame   0x00001580       0x30 build/system_stm32f1xx.o
- .debug_frame   0x000015b0       0x28 build/usb_device.o
- .debug_frame   0x000015d8       0xe0 build/usbd_desc.o
- .debug_frame   0x000016b8      0x2ec build/usbd_conf.o
- .debug_frame   0x000019a4      0x1c4 build/usbd_core.o
- .debug_frame   0x00001b68      0x178 build/usbd_ctlreq.o
- .debug_frame   0x00001ce0       0xb8 build/usbd_ioreq.o
- .debug_frame   0x00001d98      0x344 build/stm32f1xx_hal_rtc.o
- .debug_frame   0x000020dc       0x58 build/usbd_custom_hid_if.o
- .debug_frame   0x00002134      0x11c build/usbd_customhid.o
- .debug_frame   0x00002250      0xb18 build/stm32f1xx_hal_tim.o
- .debug_frame   0x00002d68      0x418 build/stm32f1xx_hal_tim_ex.o
- .debug_frame   0x00003180       0x2c C:/msys64/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-memset.o)
- .debug_frame   0x000031ac       0x2c C:/msys64/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-init.o)
+.debug_frame    0x00000000     0x31dc
+ .debug_frame   0x00000000      0x134 build/main.o
+ .debug_frame   0x00000134       0xe0 build/stm32f1xx_it.o
+ .debug_frame   0x00000214       0xb4 build/stm32f1xx_hal_msp.o
+ .debug_frame   0x000002c8      0x2c8 build/stm32f1xx_hal_adc.o
+ .debug_frame   0x00000590      0x19c build/stm32f1xx_hal_adc_ex.o
+ .debug_frame   0x0000072c      0x1cc build/stm32f1xx_hal.o
+ .debug_frame   0x000008f8      0x184 build/stm32f1xx_hal_rcc.o
+ .debug_frame   0x00000a7c       0x5c build/stm32f1xx_hal_rcc_ex.o
+ .debug_frame   0x00000ad8       0xe4 build/stm32f1xx_hal_gpio.o
+ .debug_frame   0x00000bbc      0x144 build/stm32f1xx_hal_dma.o
+ .debug_frame   0x00000d00      0x19c build/stm32f1xx_hal_cortex.o
+ .debug_frame   0x00000e9c      0x140 build/stm32f1xx_hal_pwr.o
+ .debug_frame   0x00000fdc      0x358 build/stm32f1xx_hal_pcd.o
+ .debug_frame   0x00001334       0x50 build/stm32f1xx_hal_pcd_ex.o
+ .debug_frame   0x00001384      0x200 build/stm32f1xx_ll_usb.o
+ .debug_frame   0x00001584       0x30 build/system_stm32f1xx.o
+ .debug_frame   0x000015b4       0x28 build/usb_device.o
+ .debug_frame   0x000015dc       0xe0 build/usbd_desc.o
+ .debug_frame   0x000016bc      0x2ec build/usbd_conf.o
+ .debug_frame   0x000019a8      0x1c4 build/usbd_core.o
+ .debug_frame   0x00001b6c      0x178 build/usbd_ctlreq.o
+ .debug_frame   0x00001ce4       0xb8 build/usbd_ioreq.o
+ .debug_frame   0x00001d9c      0x344 build/stm32f1xx_hal_rtc.o
+ .debug_frame   0x000020e0       0x58 build/usbd_custom_hid_if.o
+ .debug_frame   0x00002138      0x11c build/usbd_customhid.o
+ .debug_frame   0x00002254      0xb18 build/stm32f1xx_hal_tim.o
+ .debug_frame   0x00002d6c      0x418 build/stm32f1xx_hal_tim_ex.o
+ .debug_frame   0x00003184       0x2c C:/msys64/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-memset.o)
+ .debug_frame   0x000031b0       0x2c C:/msys64/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-init.o)
 
 .debug_loclists
                 0x00000000      0x23c

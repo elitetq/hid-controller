@@ -31,12 +31,13 @@
 /* Must match the HID report descriptor in usbd_custom_hid_if.c byte for byte. */
 typedef struct __attribute__((packed))
 {
-  uint8_t x;        /* left  stick X */
-  uint8_t y;        /* left  stick Y */
-  uint8_t z;        /* right stick X */
-  uint8_t rz;       /* right stick Y */
-  uint8_t hat;      /* d-pad, 8 = centred */
-  uint8_t buttons;  /* bit 0..7 = button 1..8 */
+  uint8_t  x;        /* left  stick X */
+  uint8_t  y;        /* left  stick Y */
+  uint8_t  z;        /* triggers, 128 = centred, LT -> 0, RT -> 255 */
+  uint8_t  rx;       /* right stick X */
+  uint8_t  ry;       /* right stick Y */
+  uint8_t  hat;      /* d-pad, 8 = centred */
+  uint16_t buttons;  /* bit 0..10 = button 1..11 */
 } gamepad_report_t;
 /* USER CODE END PTD */
 
@@ -388,13 +389,13 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pin = GPIO_PIN_14|GPIO_PIN_15|GPIO_PIN_4|GPIO_PIN_5
                           |GPIO_PIN_6|GPIO_PIN_7;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Pull = GPIO_PULLDOWN;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
   /*Configure GPIO pins : PA8 PA9 */
   GPIO_InitStruct.Pin = GPIO_PIN_8|GPIO_PIN_9;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Pull = GPIO_PULLDOWN;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
   /* USER CODE BEGIN MX_GPIO_Init_2 */
@@ -404,23 +405,24 @@ static void MX_GPIO_Init(void)
 
 /* USER CODE BEGIN 4 */
 static void gamepad_update_joysticks() {
-  uint32_t avg_x, avg_y, avg_z, avg_rz;
-  avg_x = avg_y = avg_z = avg_rz = 0;
+  uint32_t avg_x, avg_y, avg_rx, avg_ry;
+  avg_x = avg_y = avg_rx = avg_ry = 0;
   for(uint32_t i = 0; i < JOYSTICK_OVERSAMPLE; i++) {
     avg_x += joystick_buf[i*4];
     avg_y += joystick_buf[i*4+1];
-    avg_z += joystick_buf[i*4+2];
-    avg_rz += joystick_buf[i*4+3];
+    avg_rx += joystick_buf[i*4+2];
+    avg_ry += joystick_buf[i*4+3];
   }
   gamepad_report.x = avg_x >> (JOYSTICK_OVERSAMPLE_BITS+4);
-  gamepad_report.z = avg_z >> (JOYSTICK_OVERSAMPLE_BITS+4);
+  gamepad_report.rx = avg_rx >> (JOYSTICK_OVERSAMPLE_BITS+4);
   gamepad_report.y = avg_y >> (JOYSTICK_OVERSAMPLE_BITS+4);
-  gamepad_report.rz = avg_rz >> (JOYSTICK_OVERSAMPLE_BITS+4);
+  gamepad_report.ry = avg_ry >> (JOYSTICK_OVERSAMPLE_BITS+4);
 }
 
 static void gamepad_update_buttons() {
   gamepad_report.buttons = 0xAA; // 10101010 temp
   gamepad_report.hat = 8;        // centred - 0 would read as d-pad up
+  gamepad_report.z = 128;        // triggers released - 0 would read as LT held
   return;
   // add actual gpio polling later
 }
