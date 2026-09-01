@@ -33,11 +33,12 @@ typedef struct __attribute__((packed))
 {
   uint8_t  x;        /* left  stick X */
   uint8_t  y;        /* left  stick Y */
-  uint8_t  z;        /* triggers, 128 = centred, LT -> 0, RT -> 255 */
+  uint8_t  lt;        /* triggers, 128 = centred, LT -> 0, RT -> 255 */
   uint8_t  rx;       /* right stick X */
   uint8_t  ry;       /* right stick Y */
+  uint8_t  rt;
   uint8_t  hat;      /* d-pad, 8 = centred */
-  uint16_t buttons;  /* bit 0..10 = button 1..11 */
+  uint16_t buttons;  /* bit 0..9 = button 1..10 */
 } gamepad_report_t;
 /* USER CODE END PTD */
 
@@ -419,10 +420,34 @@ static void gamepad_update_joysticks() {
   gamepad_report.ry = avg_ry >> (JOYSTICK_OVERSAMPLE_BITS+4);
 }
 
+// num > 0 && num < 11
+static void gamepad_set_button(uint8_t num, uint8_t val) {
+  uint16_t bitmask = 0x0001 << (num-1);
+  if(val)
+    gamepad_report.buttons |= bitmask;
+  else
+    gamepad_report.buttons &= ~bitmask;
+}
+
+get_dpad(uint8_t dpad_right, uint8_t dpad_down, uint8_t dpad_left, uint8_t dpad_up) {
+  if(dpad_up) {
+    return dpad_right; // N - NE
+  } else if(dpad_right) {
+    return dpad_down + 2; // E - SE
+  } else if(dpad_down) {
+    return dpad_left + 4; // S - SW
+  } else if(dpad_left) {
+    return dpad_up + 6; // W - NW
+  }
+  return 8; // no direction
+}
+
 static void gamepad_update_buttons() {
-  gamepad_report.buttons = 0xAA; // 10101010 temp
+  gamepad_report.buttons = 0x0000; // 10101010 temp
   gamepad_report.hat = 8;        // centred - 0 would read as d-pad up
-  gamepad_report.z = 128;        // triggers released - 0 would read as LT held
+  gamepad_report.rt = 128;        // triggers released - 0 would read as LT held
+  gamepad_report.lt = 128;        // triggers released - 0 would read as LT held
+  gamepad_report.hat = get_dpad(0,0,0,0);
   return;
   // add actual gpio polling later
 }

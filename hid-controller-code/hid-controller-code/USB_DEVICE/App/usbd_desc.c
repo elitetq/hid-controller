@@ -62,6 +62,7 @@
   * @{
   */
 
+  // Emulating xbox360 button style
 #define USBD_VID     0x45E
 #define USBD_LANGID_STRING     1033
 #define USBD_MANUFACTURER_STRING     "Jonart B"
