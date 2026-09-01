@@ -429,15 +429,17 @@ static void gamepad_set_button(uint8_t num, uint8_t val) {
     gamepad_report.buttons &= ~bitmask;
 }
 
-get_dpad(uint8_t dpad_right, uint8_t dpad_down, uint8_t dpad_left, uint8_t dpad_up) {
+static int get_dpad(uint8_t dpad_right, uint8_t dpad_down, uint8_t dpad_left, uint8_t dpad_up) {
   if(dpad_up) {
-    return dpad_right; // N - NE
+    if(dpad_right) return 1;
+    else if(dpad_left) return 7;
+    return 0;
   } else if(dpad_right) {
     return dpad_down + 2; // E - SE
   } else if(dpad_down) {
     return dpad_left + 4; // S - SW
   } else if(dpad_left) {
-    return dpad_up + 6; // W - NW
+    return 6;
   }
   return 8; // no direction
 }

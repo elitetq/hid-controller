@@ -130,14 +130,14 @@ __ALIGN_BEGIN static uint8_t CUSTOM_HID_ReportDesc_FS[] __ALIGN_END =
   0x35, 0x00,        //    Physical Minimum (0)             
   0x46, 0x3B, 0x01,  //    Physical Maximum (315 degrees)   
   0x65, 0x14,        //    Unit (Eng Rotation: Degrees)     
-  0x75, 0x03,        //    Report Size (4)                  
+  0x75, 0x04,        //    Report Size (4)                  
   0x95, 0x01,        //    Report Count (1)                 
   0x81, 0x42,        //    Input (Data,Var,Abs,Null State)  
   0x65, 0x00,        //    Unit (None)                      
   0x75, 0x04,        //    Report Size (4)                  
   0x95, 0x01,        //    Report Count (1)                 
   0x81, 0x03,        //    Input (Const,Var,Abs) - padding  
-  /* ---- eleven buttons ---- */
+  /* ---- ten buttons ---- */
   0x05, 0x09,        //    Usage Page (Button)              
   0x19, 0x01,        //    Usage Minimum (Button 1)         
   0x29, 0x0A,        //    Usage Maximum (Button 10)        
