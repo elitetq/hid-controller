@@ -62,10 +62,10 @@
   * @{
   */
 
-#define USBD_VID     0x45E
+#define USBD_VID     1155
 #define USBD_LANGID_STRING     1033
 #define USBD_MANUFACTURER_STRING     "Jonart B"
-#define USBD_PID_FS     0x28E
+#define USBD_PID_FS     22355
 #define USBD_PRODUCT_STRING_FS     "J-Controller"
 #define USBD_CONFIGURATION_STRING_FS     "Custom HID Config"
 #define USBD_INTERFACE_STRING_FS     "Custom HID Interface"
