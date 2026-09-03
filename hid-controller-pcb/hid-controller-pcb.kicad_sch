@@ -2146,26 +2146,26 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J"
-				(at -7.62 11.43 0)
+			(property "Reference" "J1"
+				(at -1.27 -24.13 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
+					(justify left)
 				)
 			)
 			(property "Value" "10118194-0011LF"
-				(at -7.62 -25.4 0)
+				(at -8.255 -26.035 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
+					(justify left)
 				)
 			)
 			(property "Footprint" "lib:10118194-0011LF"
@@ -4877,6 +4877,12 @@
 		(uuid "f208a7dd-163f-46b3-af59-0a9efaad239b")
 	)
 	(junction
+		(at 48.26 38.735)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "04b23706-5789-484e-b84e-ea801e119ec3")
+	)
+	(junction
 		(at 162.56 105.41)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5229,12 +5235,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8f478615-1959-458c-a4c2-f05de8238b0f")
-	)
-	(junction
-		(at 48.26 38.735)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "965e9de5-e2ff-4836-9a7b-5d82c85028e4")
 	)
 	(junction
 		(at 46.99 181.61)
@@ -6722,16 +6722,6 @@
 	)
 	(wire
 		(pts
-			(xy 41.275 38.735) (xy 48.26 38.735)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "689c1136-e520-4fff-acb0-fecfe62c1ad4")
-	)
-	(wire
-		(pts
 			(xy 44.45 94.615) (xy 44.45 96.52)
 		)
 		(stroke
@@ -8132,6 +8122,16 @@
 	)
 	(wire
 		(pts
+			(xy 41.275 38.735) (xy 48.26 38.735)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db45313c-e9ad-4b22-b054-c4a3e915388d")
+	)
+	(wire
+		(pts
 			(xy 224.79 125.095) (xy 224.79 129.54)
 		)
 		(stroke
@@ -8699,30 +8699,6 @@
 			(type default)
 		)
 		(uuid "ff3fe7aa-98e3-47c6-b045-0921ea220e85")
-	)
-	(global_label "+5V"
-		(shape input)
-		(at 48.26 48.895 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "003235b4-860d-4b2c-82a4-52ee776061fd")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 48.26 55.7507 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 	)
 	(global_label "OSC32_OUT"
 		(shape input)
@@ -10009,6 +9985,30 @@
 		(uuid "93e71ccf-52db-4276-a465-20280c12c5a7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 85.8882 64.135 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "+3V3"
+		(shape output)
+		(at 48.26 48.895 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "97ca97a4-59b0-40d6-b1a9-365ca1174d75")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 48.26 55.921 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15185,7 +15185,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "1uF"
 			(at 61.595 182.88 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15196,7 +15196,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "lib:CAPAE530X550N"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 63.5 178.435 0)
 			(hide yes)
 			(show_name no)
@@ -16512,7 +16512,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "1uF"
 			(at 66.675 182.88 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16523,7 +16523,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "lib:CAPAE530X550N"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 68.58 178.435 0)
 			(hide yes)
 			(show_name no)
