@@ -8894,17 +8894,17 @@
 	)
 	(global_label "DPAD_1"
 		(shape output)
-		(at 93.98 97.155 180)
+		(at 134.62 61.595 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "1c6a23b6-3db1-4565-b382-3aafb7526911")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 84.8224 97.155 0)
+			(at 143.7776 61.595 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8912,7 +8912,7 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 	)
@@ -9326,17 +9326,17 @@
 	)
 	(global_label "BTN_RT"
 		(shape output)
-		(at 134.62 61.595 0)
+		(at 93.98 97.155 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "4fb21063-de53-489e-8d6e-63e22b57bda5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 143.7776 61.595 0)
+			(at 84.8224 97.155 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9344,7 +9344,7 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 	)
