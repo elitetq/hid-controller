@@ -15170,9 +15170,9 @@
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
+		(on_board no)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "6c1b111d-1aab-4b79-ae14-311b0c30f700")
 		(property "Reference" "C9"
 			(at 62.23 172.085 0)
@@ -19303,9 +19303,9 @@
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
+		(on_board no)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "d6f8e723-7456-4715-b333-36cece75e9dc")
 		(property "Reference" "C11"
 			(at 52.07 172.085 0)
