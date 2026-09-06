@@ -107,6 +107,7 @@ __ALIGN_BEGIN static uint8_t CUSTOM_HID_ReportDesc_FS[] __ALIGN_END =
   0x05, 0x01,        // Usage Page (Generic Desktop)         
   0x09, 0x05,        // Usage (Game Pad)                     
   0xA1, 0x01,        // Collection (Application)             
+  0x09, 0x01,        // Usage (Pointer)
   0xA1, 0x00,        //   Collection (Physical)              
   /* ---- five 8-bit analog axes ---- */
   0x05, 0x01,        //    Usage Page (Generic Desktop)     

@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.8,
-          "height": 1.27,
-          "width": 2.54
+          "drill": 0.0,
+          "height": 1.35,
+          "width": 0.35
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -53,14 +53,14 @@
           "border_display_style": 2,
           "border_hatch_pitch": 0.5,
           "corner_radius": 0.0,
-          "corner_smoothing": 2,
+          "corner_smoothing": 0,
           "fill_mode": 0,
           "hatch_gap": 1.5,
           "hatch_orientation": 0.0,
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.1,
+          "min_clearance": 0.0,
           "min_island_area": 10.0,
           "min_thickness": 0.25,
           "pad_connection": 1,
@@ -86,15 +86,31 @@
           ""
         ],
         [
-          "starved_thermal|201805000|44475000|1a2e2a00-e6ab-4349-8da6-27d3c4ca05ad|fef16540-b1a0-43c1-b984-3c96670e96df|F.Cu",
+          "starved_thermal|198325000|42700000|ea124bae-609c-4e92-bb7e-92945e96e846|320e6605-7071-408a-9e82-d118a64604a8|F.Cu",
           ""
         ],
         [
-          "starved_thermal|202650000|46120000|1a2e2a00-e6ab-4349-8da6-27d3c4ca05ad|1c1f42ed-d53c-492f-8437-c00187cc44f5|F.Cu",
+          "starved_thermal|200865000|41975000|ea124bae-609c-4e92-bb7e-92945e96e846|2418b22c-c650-447f-9a58-53b33995f328|F.Cu",
           ""
         ],
         [
-          "starved_thermal|203500000|42250000|1a2e2a00-e6ab-4349-8da6-27d3c4ca05ad|677f9763-1725-4d65-a6bd-b2ec47269c80|F.Cu",
+          "starved_thermal|202200000|54350000|ea124bae-609c-4e92-bb7e-92945e96e846|e1209eaa-c4e5-4c06-a5cc-3590d4f0326c|F.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|210525000|49850000|ea124bae-609c-4e92-bb7e-92945e96e846|e7a29e6e-75f0-47a5-a614-b8af942ce725|F.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|220800000|80175000|ea124bae-609c-4e92-bb7e-92945e96e846|0d5fc983-bc69-4450-8191-6727c4634ecd|F.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|220850000|66875000|ea124bae-609c-4e92-bb7e-92945e96e846|3b740afd-ff26-484d-8c64-369b5941b6a0|F.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|223000000|68950000|ea124bae-609c-4e92-bb7e-92945e96e846|8f83afbd-ac43-42e3-afcd-a7f63828e065|F.Cu",
           ""
         ]
       ],
@@ -830,7 +846,7 @@
         "uuid": "a584278c-8fa2-4292-8ca4-efeed5c5d2cf"
       }
     ],
-    "used_designators": "",
+    "used_designators": "C15-18,R26",
     "variants": []
   },
   "sheets": [

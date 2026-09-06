@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 1
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 1
   31:Core/Src/main.c **** /* Must match the HID report descriptor in usbd_custom_hid_if.c byte for byte. */
   32:Core/Src/main.c **** typedef struct __attribute__((packed))
   33:Core/Src/main.c **** {
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 2
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s 			page 2
 
 
   34:Core/Src/main.c ****   uint8_t  x;        /* left  stick X */
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 1
   88:Core/Src/main.c ****   * @retval int
   89:Core/Src/main.c ****   */
   90:Core/Src/main.c **** int main(void)
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 3
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s 			page 3
 
 
   91:Core/Src/main.c **** {
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 1
  145:Core/Src/main.c **** {
  146:Core/Src/main.c ****   RCC_OscInitTypeDef RCC_OscInitStruct = {0};
  147:Core/Src/main.c ****   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 4
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s 			page 4
 
 
  148:Core/Src/main.c ****   RCC_PeriphCLKInitTypeDef PeriphClkInit = {0};
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 1
  202:Core/Src/main.c ****   /* USER CODE BEGIN ADC1_Init 0 */
  203:Core/Src/main.c **** 
  204:Core/Src/main.c ****   /* USER CODE END ADC1_Init 0 */
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 5
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s 			page 5
 
 
  205:Core/Src/main.c **** 
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 1
  259:Core/Src/main.c ****   {
  260:Core/Src/main.c ****     Error_Handler();
  261:Core/Src/main.c ****   }
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 6
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s 			page 6
 
 
  262:Core/Src/main.c ****   /* USER CODE BEGIN ADC1_Init 2 */
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 1
  316:Core/Src/main.c ****   /* USER CODE END TIM2_Init 1 */
  317:Core/Src/main.c ****   htim2.Instance = TIM2;
  318:Core/Src/main.c ****   htim2.Init.Prescaler = 0;
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 7
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s 			page 7
 
 
  319:Core/Src/main.c ****   htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 1
  373:Core/Src/main.c ****   __HAL_RCC_GPIOC_CLK_ENABLE();
  374:Core/Src/main.c ****   __HAL_RCC_GPIOD_CLK_ENABLE();
  375:Core/Src/main.c ****   __HAL_RCC_GPIOA_CLK_ENABLE();
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 8
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s 			page 8
 
 
  376:Core/Src/main.c ****   __HAL_RCC_GPIOB_CLK_ENABLE();
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 1
   44              	.LBE4:
  410:Core/Src/main.c ****   avg_x = avg_y = avg_rx = avg_ry = 0;
   45              		.loc 1 410 35 view .LVU6
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 9
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s 			page 9
 
 
   46 0004 8C46     		mov	ip, r1
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 1
   93 0036 9C44     		add	ip, ip, r3
   94              	.LVL5:
  411:Core/Src/main.c ****     avg_x += joystick_buf[i*4];
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 10
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s 			page 10
 
 
   95              		.loc 1 411 49 is_stmt 1 discriminator 3 view .LVU27
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 1
  144              	get_dpad:
  145              	.LVL11:
  146              	.LFB77:
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 11
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s 			page 11
 
 
  422:Core/Src/main.c **** 
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 1
  440:Core/Src/main.c ****     return dpad_left + 4; // S - SW
  441:Core/Src/main.c ****   } else if(dpad_left) {
  181              		.loc 1 441 10 is_stmt 1 view .LVU57
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 12
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s 			page 12
 
 
  182              		.loc 1 441 12 is_stmt 0 view .LVU58
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 1
  224              		.syntax unified
  225              		.thumb
  226              		.thumb_func
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 13
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s 			page 13
 
 
  228              	gamepad_update_buttons:
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 1
  272              		.cfi_endproc
  273              	.LFE78:
  275              		.section	.text.gamepad_update,"ax",%progbits
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 14
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s 			page 14
 
 
  276              		.align	1
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 1
  367:Core/Src/main.c ****   /* USER CODE BEGIN MX_GPIO_Init_1 */
  326              		.loc 1 367 20 is_stmt 0 view .LVU91
  327 0004 0024     		movs	r4, #0
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 15
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s 			page 15
 
 
  328 0006 0494     		str	r4, [sp, #16]
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 1
  367 0034 9A69     		ldr	r2, [r3, #24]
  368 0036 42F00402 		orr	r2, r2, #4
  369 003a 9A61     		str	r2, [r3, #24]
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 16
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s 			page 16
 
 
  375:Core/Src/main.c ****   __HAL_RCC_GPIOB_CLK_ENABLE();
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 1
  384:Core/Src/main.c ****   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
  409              		.loc 1 384 24 is_stmt 0 view .LVU122
  410 006c 0694     		str	r4, [sp, #24]
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 17
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s 			page 17
 
 
  385:Core/Src/main.c ****   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 1
  448 009a FFF7FEFF 		bl	HAL_GPIO_Init
  449              	.LVL31:
  405:Core/Src/main.c **** 
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 18
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s 			page 18
 
 
  450              		.loc 1 405 1 is_stmt 0 view .LVU140
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 1
  499              		.loc 1 351 3 view .LVU147
  355:Core/Src/main.c ****   HAL_NVIC_EnableIRQ(DMA1_Channel1_IRQn);
  500              		.loc 1 355 3 view .LVU148
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 19
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s 			page 19
 
 
  501 0018 0022     		movs	r2, #0
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 1
    2:Drivers/CMSIS/Include/cmsis_gcc.h ****  * @file     cmsis_gcc.h
    3:Drivers/CMSIS/Include/cmsis_gcc.h ****  * @brief    CMSIS compiler GCC header file
    4:Drivers/CMSIS/Include/cmsis_gcc.h ****  * @version  V5.0.4
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 20
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s 			page 20
 
 
    5:Drivers/CMSIS/Include/cmsis_gcc.h ****  * @date     09. April 2018
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 1
   59:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __WEAK                                 __attribute__((weak))
   60:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
   61:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __PACKED
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 21
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s 			page 21
 
 
   62:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __PACKED                               __attribute__((packed, aligned(1)))
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 1
  116:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  117:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  118:Drivers/CMSIS/Include/cmsis_gcc.h **** /* ###########################  Core Function Access  ########################### */
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 22
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s 			page 22
 
 
  119:Drivers/CMSIS/Include/cmsis_gcc.h **** /** \ingroup  CMSIS_Core_FunctionInterface
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 1
  569              		.loc 1 200 1 view -0
  570              		.cfi_startproc
  571              		@ args = 0, pretend = 0, frame = 16
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 23
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s 			page 23
 
 
  572              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 1
  610              		.loc 1 220 30 is_stmt 0 view .LVU174
  611 0026 0423     		movs	r3, #4
  612 0028 0361     		str	r3, [r0, #16]
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 24
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s 			page 24
 
 
  221:Core/Src/main.c ****   {
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 1
  649 004e FFF7FEFF 		bl	HAL_ADC_ConfigChannel
  650              	.LVL36:
  240:Core/Src/main.c ****   {
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 25
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s 			page 25
 
 
  651              		.loc 1 240 6 discriminator 1 view .LVU193
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 1
  690              		@ sp needed
  691 007c 5DF804FB 		ldr	pc, [sp], #4
  692              	.L41:
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 26
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s 			page 26
 
 
  693              	.LCFI12:
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 1
  741 0002 0748     		ldr	r0, .L52
  742 0004 074B     		ldr	r3, .L52+4
  743 0006 0360     		str	r3, [r0]
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 27
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s 			page 27
 
 
  287:Core/Src/main.c ****   hrtc.Init.OutPut = RTC_OUTPUTSOURCE_ALARM;
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 1
  790              		.cfi_def_cfa_offset 32
  311:Core/Src/main.c ****   TIM_MasterConfigTypeDef sMasterConfig = {0};
  791              		.loc 1 311 3 view .LVU227
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 28
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s 			page 28
 
 
  311:Core/Src/main.c ****   TIM_MasterConfigTypeDef sMasterConfig = {0};
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 1
  828 002c 90B9     		cbnz	r0, .L59
  327:Core/Src/main.c ****   if (HAL_TIM_ConfigClockSource(&htim2, &sClockSourceConfig) != HAL_OK)
  829              		.loc 1 327 3 is_stmt 1 view .LVU246
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 29
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s 			page 29
 
 
  327:Core/Src/main.c ****   if (HAL_TIM_ConfigClockSource(&htim2, &sClockSourceConfig) != HAL_OK)
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 1
  870              		.loc 1 330 5 view .LVU260
  871 0058 FFF7FEFF 		bl	Error_Handler
  872              	.LVL50:
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 30
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s 			page 30
 
 
  873              	.L61:
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 1
  921 001c 0193     		str	r3, [sp, #4]
  922 001e 0293     		str	r3, [sp, #8]
  923 0020 0393     		str	r3, [sp, #12]
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 31
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s 			page 31
 
 
  924 0022 0493     		str	r3, [sp, #16]
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 1
  959              		.loc 1 168 3 is_stmt 1 view .LVU287
  168:Core/Src/main.c ****                               |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
  960              		.loc 1 168 31 is_stmt 0 view .LVU288
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 32
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s 			page 32
 
 
  961 0048 0F23     		movs	r3, #15
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 1
  997              		.loc 1 183 3 is_stmt 1 view .LVU306
  183:Core/Src/main.c ****   if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK)
  998              		.loc 1 183 35 is_stmt 0 view .LVU307
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 33
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s 			page 33
 
 
  999 0074 0023     		movs	r3, #0
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 1
  1046              		@ Volatile: function does not return.
  1047              		@ args = 0, pretend = 0, frame = 0
  1048              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 34
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s 			page 34
 
 
  1049 0000 08B5     		push	{r3, lr}
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 1
  1091              		.loc 1 134 5 view .LVU328
  1092 0034 FFF7FEFF 		bl	gamepad_update
  1093              	.LVL70:
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 35
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s 			page 35
 
 
  135:Core/Src/main.c ****   }
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 1
  1142      00000000 
  1142      00000000 
  1142      00000000 
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 36
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s 			page 36
 
 
  1142      00000000 
@@ -2132,55 +2132,55 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 1
  1168              		.file 19 "USB_DEVICE/App/usb_device.h"
  1169              		.file 20 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
  1170              		.file 21 "<built-in>"
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 37
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s 			page 37
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 main.c
-C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s:19     .text.gamepad_update_joysticks:00000000 $t
-C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s:24     .text.gamepad_update_joysticks:00000000 gamepad_update_joysticks
-C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s:133    .text.gamepad_update_joysticks:0000005c $d
-C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s:1114   .bss.joystick_buf:00000000 joystick_buf
-C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s:1120   .bss.gamepad_report:00000000 gamepad_report
-C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s:139    .text.get_dpad:00000000 $t
-C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s:144    .text.get_dpad:00000000 get_dpad
-C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s:223    .text.gamepad_update_buttons:00000000 $t
-C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s:228    .text.gamepad_update_buttons:00000000 gamepad_update_buttons
-C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s:271    .text.gamepad_update_buttons:00000024 $d
-C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s:276    .text.gamepad_update:00000000 $t
-C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s:281    .text.gamepad_update:00000000 gamepad_update
-C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s:304    .text.MX_GPIO_Init:00000000 $t
-C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s:309    .text.MX_GPIO_Init:00000000 MX_GPIO_Init
-C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s:459    .text.MX_GPIO_Init:000000a4 $d
-C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s:466    .text.MX_DMA_Init:00000000 $t
-C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s:471    .text.MX_DMA_Init:00000000 MX_DMA_Init
-C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s:519    .text.MX_DMA_Init:00000030 $d
-C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s:524    .text.Error_Handler:00000000 $t
-C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s:530    .text.Error_Handler:00000000 Error_Handler
-C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s:562    .text.MX_ADC1_Init:00000000 $t
-C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s:567    .text.MX_ADC1_Init:00000000 MX_ADC1_Init
-C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s:717    .text.MX_ADC1_Init:00000094 $d
-C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s:1148   .bss.hadc1:00000000 hadc1
-C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s:723    .text.MX_RTC_Init:00000000 $t
-C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s:728    .text.MX_RTC_Init:00000000 MX_RTC_Init
-C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s:767    .text.MX_RTC_Init:00000020 $d
-C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s:1134   .bss.hrtc:00000000 hrtc
-C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s:773    .text.MX_TIM2_Init:00000000 $t
-C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s:778    .text.MX_TIM2_Init:00000000 MX_TIM2_Init
-C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s:880    .text.MX_TIM2_Init:00000060 $d
-C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s:1127   .bss.htim2:00000000 htim2
-C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s:885    .text.SystemClock_Config:00000000 $t
-C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s:891    .text.SystemClock_Config:00000000 SystemClock_Config
-C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s:1036   .text.main:00000000 $t
-C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s:1042   .text.main:00000000 main
-C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s:1104   .text.main:00000044 $d
-C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s:1111   .bss.joystick_buf:00000000 $d
-C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s:1117   .bss.gamepad_report:00000000 $d
-C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s:1124   .bss.htim2:00000000 $d
-C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s:1131   .bss.hrtc:00000000 $d
-C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s:1141   .bss.hdma_adc1:00000000 hdma_adc1
-C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s:1138   .bss.hdma_adc1:00000000 $d
-C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s:1145   .bss.hadc1:00000000 $d
+C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s:19     .text.gamepad_update_joysticks:00000000 $t
+C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s:24     .text.gamepad_update_joysticks:00000000 gamepad_update_joysticks
+C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s:133    .text.gamepad_update_joysticks:0000005c $d
+C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s:1114   .bss.joystick_buf:00000000 joystick_buf
+C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s:1120   .bss.gamepad_report:00000000 gamepad_report
+C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s:139    .text.get_dpad:00000000 $t
+C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s:144    .text.get_dpad:00000000 get_dpad
+C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s:223    .text.gamepad_update_buttons:00000000 $t
+C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s:228    .text.gamepad_update_buttons:00000000 gamepad_update_buttons
+C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s:271    .text.gamepad_update_buttons:00000024 $d
+C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s:276    .text.gamepad_update:00000000 $t
+C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s:281    .text.gamepad_update:00000000 gamepad_update
+C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s:304    .text.MX_GPIO_Init:00000000 $t
+C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s:309    .text.MX_GPIO_Init:00000000 MX_GPIO_Init
+C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s:459    .text.MX_GPIO_Init:000000a4 $d
+C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s:466    .text.MX_DMA_Init:00000000 $t
+C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s:471    .text.MX_DMA_Init:00000000 MX_DMA_Init
+C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s:519    .text.MX_DMA_Init:00000030 $d
+C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s:524    .text.Error_Handler:00000000 $t
+C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s:530    .text.Error_Handler:00000000 Error_Handler
+C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s:562    .text.MX_ADC1_Init:00000000 $t
+C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s:567    .text.MX_ADC1_Init:00000000 MX_ADC1_Init
+C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s:717    .text.MX_ADC1_Init:00000094 $d
+C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s:1148   .bss.hadc1:00000000 hadc1
+C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s:723    .text.MX_RTC_Init:00000000 $t
+C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s:728    .text.MX_RTC_Init:00000000 MX_RTC_Init
+C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s:767    .text.MX_RTC_Init:00000020 $d
+C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s:1134   .bss.hrtc:00000000 hrtc
+C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s:773    .text.MX_TIM2_Init:00000000 $t
+C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s:778    .text.MX_TIM2_Init:00000000 MX_TIM2_Init
+C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s:880    .text.MX_TIM2_Init:00000060 $d
+C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s:1127   .bss.htim2:00000000 htim2
+C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s:885    .text.SystemClock_Config:00000000 $t
+C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s:891    .text.SystemClock_Config:00000000 SystemClock_Config
+C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s:1036   .text.main:00000000 $t
+C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s:1042   .text.main:00000000 main
+C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s:1104   .text.main:00000044 $d
+C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s:1111   .bss.joystick_buf:00000000 $d
+C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s:1117   .bss.gamepad_report:00000000 $d
+C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s:1124   .bss.htim2:00000000 $d
+C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s:1131   .bss.hrtc:00000000 $d
+C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s:1141   .bss.hdma_adc1:00000000 hdma_adc1
+C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s:1138   .bss.hdma_adc1:00000000 $d
+C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s:1145   .bss.hadc1:00000000 $d
 
 UNDEFINED SYMBOLS
 HAL_GPIO_WritePin
@@ -2192,7 +2192,7 @@ HAL_ADC_ConfigChannel
 HAL_RTC_Init
 HAL_TIM_Base_Init
 HAL_TIM_ConfigClockSource
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccZX0Uyf.s 			page 38
+ARM GAS  C:\Users\jonar\AppData\Local\Temp\ccBSxtkd.s 			page 38
 
 
 HAL_TIMEx_MasterConfigSynchronization

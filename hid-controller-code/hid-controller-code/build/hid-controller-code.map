@@ -2217,8 +2217,8 @@ LOAD C:/msys64/mingw64/bin/../lib/gcc/arm-none-eabi/13.3.0/thumb/v7-m/nofp/crtn.
                 0x2000005c       0x10 build/usbd_custom_hid_if.o
                 0x2000005c                USBD_CustomHID_fops_FS
  .data.CUSTOM_HID_ReportDesc_FS
-                0x2000006c       0x5d build/usbd_custom_hid_if.o
- *fill*         0x200000c9        0x3 
+                0x2000006c       0x5f build/usbd_custom_hid_if.o
+ *fill*         0x200000cb        0x1 
  .data.USBD_CUSTOM_HID_DeviceQualifierDesc
                 0x200000cc        0xa build/usbd_customhid.o
  *fill*         0x200000d6        0x2 
