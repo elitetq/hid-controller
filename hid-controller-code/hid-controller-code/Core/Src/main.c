@@ -121,6 +121,10 @@ int main(void)
   /* USER CODE BEGIN 2 */
   HAL_ADCEx_Calibration_Start(&hadc1);
   HAL_ADC_Start_DMA(&hadc1,(uint32_t*)joystick_buf,4*JOYSTICK_OVERSAMPLE);
+  gamepad_report.buttons = 0x0000; // 10101010 temp
+  gamepad_report.rt = 128;        // triggers released - 0 would read as LT held
+  gamepad_report.lt = 128;        // triggers released - 0 would read as LT held
+  gamepad_report.hat = 8;
 
   /* USER CODE END 2 */
 
@@ -131,8 +135,8 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    // gamepad_update();
-    // USBD_CUSTOM_HID_SendReport_FS((uint8_t*)&gamepad_report,sizeof(gamepad_report));
+    gamepad_update();
+    USBD_CUSTOM_HID_SendReport_FS((uint8_t*)&gamepad_report,sizeof(gamepad_report));
   }
   /* USER CODE END 3 */
 }
@@ -414,10 +418,10 @@ static void gamepad_update_joysticks() {
     avg_rx += joystick_buf[i*4+2];
     avg_ry += joystick_buf[i*4+3];
   }
-  gamepad_report.x = avg_x >> (JOYSTICK_OVERSAMPLE_BITS+4);
-  gamepad_report.rx = avg_rx >> (JOYSTICK_OVERSAMPLE_BITS+4);
-  gamepad_report.y = avg_y >> (JOYSTICK_OVERSAMPLE_BITS+4);
-  gamepad_report.ry = avg_ry >> (JOYSTICK_OVERSAMPLE_BITS+4);
+  gamepad_report.x = 255 - (avg_y >> (JOYSTICK_OVERSAMPLE_BITS+4));
+  gamepad_report.rx = 255 - (avg_ry >> (JOYSTICK_OVERSAMPLE_BITS+4));
+  gamepad_report.y = 255 - (avg_x >> (JOYSTICK_OVERSAMPLE_BITS+4));
+  gamepad_report.ry = 255 - (avg_rx >> (JOYSTICK_OVERSAMPLE_BITS+4));
 }
 
 // num > 0 && num < 11
@@ -445,13 +449,26 @@ static int get_dpad(uint8_t dpad_right, uint8_t dpad_down, uint8_t dpad_left, ui
 }
 
 static void gamepad_update_buttons() {
-  gamepad_report.buttons = 0x0000; // 10101010 temp
-  gamepad_report.hat = 8;        // centred - 0 would read as d-pad up
-  gamepad_report.rt = 128;        // triggers released - 0 would read as LT held
-  gamepad_report.lt = 128;        // triggers released - 0 would read as LT held
-  gamepad_report.hat = get_dpad(0,0,0,0);
+  gamepad_report.buttons = 0;
+  gamepad_set_button(1,(uint8_t)HAL_GPIO_ReadPin(GPIOB,0)); // A
+  gamepad_set_button(2,(uint8_t)HAL_GPIO_ReadPin(GPIOA,7)); // B
+  gamepad_set_button(3,(uint8_t)HAL_GPIO_ReadPin(GPIOB,1)); // X
+  gamepad_set_button(4,(uint8_t)HAL_GPIO_ReadPin(GPIOB,10)); // Y
+  gamepad_set_button(5,(uint8_t)HAL_GPIO_ReadPin(GPIOB,14)); // LB
+  gamepad_set_button(6,(uint8_t)HAL_GPIO_ReadPin(GPIOB,13)); // RB
+  gamepad_report.lt = HAL_GPIO_ReadPin(GPIOB,5) ? 255 : 0;  // LT
+  gamepad_report.rt = HAL_GPIO_ReadPin(GPIOB,15) ? 255 : 0;  // RT
+  gamepad_set_button(7,(uint8_t)HAL_GPIO_ReadPin(GPIOB,6)); // Back/Share
+  gamepad_set_button(8,(uint8_t)HAL_GPIO_ReadPin(GPIOB,11)); // Start
+  gamepad_set_button(9,(uint8_t)HAL_GPIO_ReadPin(GPIOB,8)); // LClick
+  gamepad_set_button(10,(uint8_t)HAL_GPIO_ReadPin(GPIOA,6)); // RClick
+  gamepad_report.hat = get_dpad(
+              (uint8_t)HAL_GPIO_ReadPin(GPIOB,7),
+              (uint8_t)HAL_GPIO_ReadPin(GPIOA,8),
+              (uint8_t)HAL_GPIO_ReadPin(GPIOA,9),
+              (uint8_t)HAL_GPIO_ReadPin(GPIOA,10)
+  );
   return;
-  // add actual gpio polling later
 }
 
 static void gamepad_update() {
