@@ -4,9 +4,7 @@ A custom USB gamepad built on an STM32F103 (KiCad PCB + firmware). It has two an
 
 <img src="assets/physical_device.jpg" alt="Assembled controller" width="420">
 
-<video src="assets/controller_video.mp4" controls width="600">
-  <a href="assets/controller_video.mp4">Watch the demo video</a>
-</video>
+▶ [Watch the demo video](assets/controller_video.mp4)
 
 Linux enumerates it fully. Windows only partly enumerates it so far.
 
