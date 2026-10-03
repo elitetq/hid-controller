@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\cc18nAxE.s 			page 1
+ARM GAS  /tmp/ccsHsCti.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\cc18nAxE.s 			page 1
   29:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c **** 
   30:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c **** /** @defgroup PCDEx PCDEx
   31:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c ****   * @brief PCD Extended HAL module driver
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\cc18nAxE.s 			page 2
+ARM GAS  /tmp/ccsHsCti.s 			page 2
 
 
   32:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c ****   * @{
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\cc18nAxE.s 			page 1
   86:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c **** 
   87:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c ****   if (fifo == 0U)
   88:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c ****   {
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\cc18nAxE.s 			page 3
+ARM GAS  /tmp/ccsHsCti.s 			page 3
 
 
   89:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c ****     hpcd->Instance->DIEPTXF0_HNPTXFSIZ = ((uint32_t)size << 16) | Tx_Offset;
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\cc18nAxE.s 			page 1
   31              		@ frame_needed = 0, uses_anonymous_args = 0
   32              		@ link register save eliminated.
  140:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c ****   PCD_EPTypeDef *ep;
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\cc18nAxE.s 			page 4
+ARM GAS  /tmp/ccsHsCti.s 			page 4
 
 
   33              		.loc 1 140 3 view .LVU1
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\cc18nAxE.s 			page 1
  168:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c ****   }
  169:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c **** #endif /* (USE_USB_DOUBLE_BUFFER == 1U) */
  170:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c **** 
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\cc18nAxE.s 			page 5
+ARM GAS  /tmp/ccsHsCti.s 			page 5
 
 
  171:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c ****   return HAL_OK;
@@ -266,45 +266,46 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\cc18nAxE.s 			page 1
  149:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c ****   }
   77              		.loc 1 149 8 view .LVU19
   78 002a F3E7     		b	.L3
-  79              	.L4:
+  79              	.LVL8:
+  80              	.L4:
  164:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c ****     /* Configure the PMA */
-  80              		.loc 1 164 5 is_stmt 1 view .LVU20
+  81              		.loc 1 164 5 is_stmt 1 view .LVU20
  164:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c ****     /* Configure the PMA */
-  81              		.loc 1 164 22 is_stmt 0 view .LVU21
-  82 002c 0122     		movs	r2, #1
-  83              	.LVL8:
+  82              		.loc 1 164 22 is_stmt 0 view .LVU21
+  83 002c 0122     		movs	r2, #1
+  84              	.LVL9:
  164:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c ****     /* Configure the PMA */
-  84              		.loc 1 164 22 view .LVU22
-  85 002e 0273     		strb	r2, [r0, #12]
+  85              		.loc 1 164 22 view .LVU22
+  86 002e 0273     		strb	r2, [r0, #12]
  166:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c ****     ep->pmaaddr1 = (uint16_t)((pmaadress & 0xFFFF0000U) >> 16);
-  86              		.loc 1 166 5 is_stmt 1 view .LVU23
+  87              		.loc 1 166 5 is_stmt 1 view .LVU23
  166:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c ****     ep->pmaaddr1 = (uint16_t)((pmaadress & 0xFFFF0000U) >> 16);
-  87              		.loc 1 166 18 is_stmt 0 view .LVU24
-  88 0030 0381     		strh	r3, [r0, #8]	@ movhi
+  88              		.loc 1 166 18 is_stmt 0 view .LVU24
+  89 0030 0381     		strh	r3, [r0, #8]	@ movhi
  167:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c ****   }
-  89              		.loc 1 167 5 is_stmt 1 view .LVU25
+  90              		.loc 1 167 5 is_stmt 1 view .LVU25
  167:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c ****   }
-  90              		.loc 1 167 20 is_stmt 0 view .LVU26
-  91 0032 1B0C     		lsrs	r3, r3, #16
-  92              	.LVL9:
+  91              		.loc 1 167 20 is_stmt 0 view .LVU26
+  92 0032 1B0C     		lsrs	r3, r3, #16
+  93              	.LVL10:
  167:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c ****   }
-  93              		.loc 1 167 18 view .LVU27
-  94 0034 4381     		strh	r3, [r0, #10]	@ movhi
-  95 0036 F0E7     		b	.L5
-  96              		.cfi_endproc
-  97              	.LFE65:
-  99              		.section	.text.HAL_PCDEx_SetConnectionState,"ax",%progbits
- 100              		.align	1
- 101              		.weak	HAL_PCDEx_SetConnectionState
- 102              		.syntax unified
- 103              		.thumb
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\cc18nAxE.s 			page 6
+  94              		.loc 1 167 18 view .LVU27
+  95 0034 4381     		strh	r3, [r0, #10]	@ movhi
+  96 0036 F0E7     		b	.L5
+  97              		.cfi_endproc
+  98              	.LFE65:
+ 100              		.section	.text.HAL_PCDEx_SetConnectionState,"ax",%progbits
+ 101              		.align	1
+ 102              		.weak	HAL_PCDEx_SetConnectionState
+ 103              		.syntax unified
+ARM GAS  /tmp/ccsHsCti.s 			page 6
 
 
- 104              		.thumb_func
- 106              	HAL_PCDEx_SetConnectionState:
- 107              	.LVL10:
- 108              	.LFB66:
+ 104              		.thumb
+ 105              		.thumb_func
+ 107              	HAL_PCDEx_SetConnectionState:
+ 108              	.LVL11:
+ 109              	.LFB66:
  173:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c **** 
  174:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c **** /**
  175:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c ****   * @brief  Software Device Connection,
@@ -316,33 +317,33 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\cc18nAxE.s 			page 1
  181:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c ****   */
  182:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c **** __weak void HAL_PCDEx_SetConnectionState(PCD_HandleTypeDef *hpcd, uint8_t state)
  183:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c **** {
- 109              		.loc 1 183 1 is_stmt 1 view -0
- 110              		.cfi_startproc
- 111              		@ args = 0, pretend = 0, frame = 0
- 112              		@ frame_needed = 0, uses_anonymous_args = 0
- 113              		@ link register save eliminated.
+ 110              		.loc 1 183 1 is_stmt 1 view -0
+ 111              		.cfi_startproc
+ 112              		@ args = 0, pretend = 0, frame = 0
+ 113              		@ frame_needed = 0, uses_anonymous_args = 0
+ 114              		@ link register save eliminated.
  184:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c ****   /* Prevent unused argument(s) compilation warning */
  185:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c ****   UNUSED(hpcd);
- 114              		.loc 1 185 3 view .LVU29
+ 115              		.loc 1 185 3 view .LVU29
  186:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c ****   UNUSED(state);
- 115              		.loc 1 186 3 view .LVU30
+ 116              		.loc 1 186 3 view .LVU30
  187:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c ****   /* NOTE : This function Should not be modified, when the callback is needed,
  188:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c ****             the HAL_PCDEx_SetConnectionState could be implemented in the user file
  189:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c ****    */
  190:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c **** }
- 116              		.loc 1 190 1 is_stmt 0 view .LVU31
- 117 0000 7047     		bx	lr
- 118              		.cfi_endproc
- 119              	.LFE66:
- 121              		.section	.text.HAL_PCDEx_LPM_Callback,"ax",%progbits
- 122              		.align	1
- 123              		.weak	HAL_PCDEx_LPM_Callback
- 124              		.syntax unified
- 125              		.thumb
- 126              		.thumb_func
- 128              	HAL_PCDEx_LPM_Callback:
- 129              	.LVL11:
- 130              	.LFB67:
+ 117              		.loc 1 190 1 is_stmt 0 view .LVU31
+ 118 0000 7047     		bx	lr
+ 119              		.cfi_endproc
+ 120              	.LFE66:
+ 122              		.section	.text.HAL_PCDEx_LPM_Callback,"ax",%progbits
+ 123              		.align	1
+ 124              		.weak	HAL_PCDEx_LPM_Callback
+ 125              		.syntax unified
+ 126              		.thumb
+ 127              		.thumb_func
+ 129              	HAL_PCDEx_LPM_Callback:
+ 130              	.LVL12:
+ 131              	.LFB67:
  191:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c **** #endif /* defined (USB) */
  192:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c **** 
  193:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c **** /**
@@ -353,37 +354,37 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\cc18nAxE.s 			page 1
  198:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c ****   */
  199:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c **** __weak void HAL_PCDEx_LPM_Callback(PCD_HandleTypeDef *hpcd, PCD_LPM_MsgTypeDef msg)
  200:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c **** {
- 131              		.loc 1 200 1 is_stmt 1 view -0
- 132              		.cfi_startproc
- 133              		@ args = 0, pretend = 0, frame = 0
- 134              		@ frame_needed = 0, uses_anonymous_args = 0
- 135              		@ link register save eliminated.
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\cc18nAxE.s 			page 7
+ 132              		.loc 1 200 1 is_stmt 1 view -0
+ 133              		.cfi_startproc
+ 134              		@ args = 0, pretend = 0, frame = 0
+ 135              		@ frame_needed = 0, uses_anonymous_args = 0
+ARM GAS  /tmp/ccsHsCti.s 			page 7
 
 
+ 136              		@ link register save eliminated.
  201:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c ****   /* Prevent unused argument(s) compilation warning */
  202:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c ****   UNUSED(hpcd);
- 136              		.loc 1 202 3 view .LVU33
+ 137              		.loc 1 202 3 view .LVU33
  203:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c ****   UNUSED(msg);
- 137              		.loc 1 203 3 view .LVU34
+ 138              		.loc 1 203 3 view .LVU34
  204:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c **** 
  205:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c ****   /* NOTE : This function should not be modified, when the callback is needed,
  206:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c ****             the HAL_PCDEx_LPM_Callback could be implemented in the user file
  207:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c ****    */
  208:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c **** }
- 138              		.loc 1 208 1 is_stmt 0 view .LVU35
- 139 0000 7047     		bx	lr
- 140              		.cfi_endproc
- 141              	.LFE67:
- 143              		.section	.text.HAL_PCDEx_BCD_Callback,"ax",%progbits
- 144              		.align	1
- 145              		.weak	HAL_PCDEx_BCD_Callback
- 146              		.syntax unified
- 147              		.thumb
- 148              		.thumb_func
- 150              	HAL_PCDEx_BCD_Callback:
- 151              	.LVL12:
- 152              	.LFB68:
+ 139              		.loc 1 208 1 is_stmt 0 view .LVU35
+ 140 0000 7047     		bx	lr
+ 141              		.cfi_endproc
+ 142              	.LFE67:
+ 144              		.section	.text.HAL_PCDEx_BCD_Callback,"ax",%progbits
+ 145              		.align	1
+ 146              		.weak	HAL_PCDEx_BCD_Callback
+ 147              		.syntax unified
+ 148              		.thumb
+ 149              		.thumb_func
+ 151              	HAL_PCDEx_BCD_Callback:
+ 152              	.LVL13:
+ 153              	.LFB68:
  209:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c **** 
  210:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c **** /**
  211:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c ****   * @brief  Send BatteryCharging message to user layer callback.
@@ -393,48 +394,47 @@ ARM GAS  C:\Users\jonar\AppData\Local\Temp\cc18nAxE.s 			page 1
  215:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c ****   */
  216:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c **** __weak void HAL_PCDEx_BCD_Callback(PCD_HandleTypeDef *hpcd, PCD_BCD_MsgTypeDef msg)
  217:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c **** {
- 153              		.loc 1 217 1 is_stmt 1 view -0
- 154              		.cfi_startproc
- 155              		@ args = 0, pretend = 0, frame = 0
- 156              		@ frame_needed = 0, uses_anonymous_args = 0
- 157              		@ link register save eliminated.
+ 154              		.loc 1 217 1 is_stmt 1 view -0
+ 155              		.cfi_startproc
+ 156              		@ args = 0, pretend = 0, frame = 0
+ 157              		@ frame_needed = 0, uses_anonymous_args = 0
+ 158              		@ link register save eliminated.
  218:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c ****   /* Prevent unused argument(s) compilation warning */
  219:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c ****   UNUSED(hpcd);
- 158              		.loc 1 219 3 view .LVU37
+ 159              		.loc 1 219 3 view .LVU37
  220:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c ****   UNUSED(msg);
- 159              		.loc 1 220 3 view .LVU38
+ 160              		.loc 1 220 3 view .LVU38
  221:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c **** 
  222:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c ****   /* NOTE : This function should not be modified, when the callback is needed,
  223:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c ****             the HAL_PCDEx_BCD_Callback could be implemented in the user file
  224:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c ****    */
  225:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c **** }
- 160              		.loc 1 225 1 is_stmt 0 view .LVU39
- 161 0000 7047     		bx	lr
- 162              		.cfi_endproc
- 163              	.LFE68:
- 165              		.text
- 166              	.Letext0:
- 167              		.file 2 "C:/msys64/mingw64/arm-none-eabi/include/machine/_default_types.h"
- 168              		.file 3 "C:/msys64/mingw64/arm-none-eabi/include/sys/_stdint.h"
- 169              		.file 4 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h"
- 170              		.file 5 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\cc18nAxE.s 			page 8
+ 161              		.loc 1 225 1 is_stmt 0 view .LVU39
+ 162 0000 7047     		bx	lr
+ 163              		.cfi_endproc
+ 164              	.LFE68:
+ 166              		.text
+ 167              	.Letext0:
+ 168              		.file 2 "/usr/lib/gcc/arm-none-eabi/14.2.1/include/stdint.h"
+ 169              		.file 3 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h"
+ 170              		.file 4 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
+ARM GAS  /tmp/ccsHsCti.s 			page 8
 
 
- 171              		.file 6 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h"
- 172              		.file 7 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd.h"
-ARM GAS  C:\Users\jonar\AppData\Local\Temp\cc18nAxE.s 			page 9
+ 171              		.file 5 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h"
+ 172              		.file 6 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd.h"
+ARM GAS  /tmp/ccsHsCti.s 			page 9
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f1xx_hal_pcd_ex.c
-C:\Users\jonar\AppData\Local\Temp\cc18nAxE.s:19     .text.HAL_PCDEx_PMAConfig:00000000 $t
-C:\Users\jonar\AppData\Local\Temp\cc18nAxE.s:25     .text.HAL_PCDEx_PMAConfig:00000000 HAL_PCDEx_PMAConfig
-C:\Users\jonar\AppData\Local\Temp\cc18nAxE.s:100    .text.HAL_PCDEx_SetConnectionState:00000000 $t
-C:\Users\jonar\AppData\Local\Temp\cc18nAxE.s:106    .text.HAL_PCDEx_SetConnectionState:00000000 HAL_PCDEx_SetConnectionState
-C:\Users\jonar\AppData\Local\Temp\cc18nAxE.s:122    .text.HAL_PCDEx_LPM_Callback:00000000 $t
-C:\Users\jonar\AppData\Local\Temp\cc18nAxE.s:128    .text.HAL_PCDEx_LPM_Callback:00000000 HAL_PCDEx_LPM_Callback
-C:\Users\jonar\AppData\Local\Temp\cc18nAxE.s:144    .text.HAL_PCDEx_BCD_Callback:00000000 $t
-C:\Users\jonar\AppData\Local\Temp\cc18nAxE.s:150    .text.HAL_PCDEx_BCD_Callback:00000000 HAL_PCDEx_BCD_Callback
+     /tmp/ccsHsCti.s:19     .text.HAL_PCDEx_PMAConfig:00000000 $t
+     /tmp/ccsHsCti.s:25     .text.HAL_PCDEx_PMAConfig:00000000 HAL_PCDEx_PMAConfig
+     /tmp/ccsHsCti.s:101    .text.HAL_PCDEx_SetConnectionState:00000000 $t
+     /tmp/ccsHsCti.s:107    .text.HAL_PCDEx_SetConnectionState:00000000 HAL_PCDEx_SetConnectionState
+     /tmp/ccsHsCti.s:123    .text.HAL_PCDEx_LPM_Callback:00000000 $t
+     /tmp/ccsHsCti.s:129    .text.HAL_PCDEx_LPM_Callback:00000000 HAL_PCDEx_LPM_Callback
+     /tmp/ccsHsCti.s:145    .text.HAL_PCDEx_BCD_Callback:00000000 $t
+     /tmp/ccsHsCti.s:151    .text.HAL_PCDEx_BCD_Callback:00000000 HAL_PCDEx_BCD_Callback
 
 NO UNDEFINED SYMBOLS

@@ -120,7 +120,7 @@ int main(void)
   MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
   HAL_ADCEx_Calibration_Start(&hadc1);
-  HAL_ADC_Start_DMA(&hadc1,joystick_buf,4*JOYSTICK_OVERSAMPLE);
+  HAL_ADC_Start_DMA(&hadc1,(uint32_t*)joystick_buf,4*JOYSTICK_OVERSAMPLE);
 
   /* USER CODE END 2 */
 
@@ -131,8 +131,8 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    gamepad_update();
-    USBD_CUSTOM_HID_SendReport_FS((uint8_t*)&gamepad_report,sizeof(gamepad_report));
+    // gamepad_update();
+    // USBD_CUSTOM_HID_SendReport_FS((uint8_t*)&gamepad_report,sizeof(gamepad_report));
   }
   /* USER CODE END 3 */
 }
