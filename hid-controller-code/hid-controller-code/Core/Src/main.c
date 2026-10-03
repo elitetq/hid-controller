@@ -379,29 +379,33 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOA_CLK_ENABLE();
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
-  /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_6, GPIO_PIN_SET);
-
   /*Configure GPIO pin : PA6 */
   GPIO_InitStruct.Pin = GPIO_PIN_6;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_PULLDOWN;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : PB14 PB15 PB4 PB5
+  /*Configure GPIO pins : PA7 PA8 PA9 PA10 */
+  GPIO_InitStruct.Pin = GPIO_PIN_7|GPIO_PIN_8|GPIO_PIN_9|GPIO_PIN_10;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : PB0 PB1 PB10 PB11
+                           PB13 PB14 PB15 PB5
                            PB6 PB7 */
-  GPIO_InitStruct.Pin = GPIO_PIN_14|GPIO_PIN_15|GPIO_PIN_4|GPIO_PIN_5
+  GPIO_InitStruct.Pin = GPIO_PIN_0|GPIO_PIN_1|GPIO_PIN_10|GPIO_PIN_11
+                          |GPIO_PIN_13|GPIO_PIN_14|GPIO_PIN_15|GPIO_PIN_5
                           |GPIO_PIN_6|GPIO_PIN_7;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : PB8 */
+  GPIO_InitStruct.Pin = GPIO_PIN_8;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_PULLDOWN;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
-
-  /*Configure GPIO pins : PA8 PA9 */
-  GPIO_InitStruct.Pin = GPIO_PIN_8|GPIO_PIN_9;
-  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-  GPIO_InitStruct.Pull = GPIO_PULLDOWN;
-  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
   /* USER CODE BEGIN MX_GPIO_Init_2 */
 
@@ -450,23 +454,23 @@ static int get_dpad(uint8_t dpad_right, uint8_t dpad_down, uint8_t dpad_left, ui
 
 static void gamepad_update_buttons() {
   gamepad_report.buttons = 0;
-  gamepad_set_button(1,(uint8_t)HAL_GPIO_ReadPin(GPIOB,0)); // A
-  gamepad_set_button(2,(uint8_t)HAL_GPIO_ReadPin(GPIOA,7)); // B
-  gamepad_set_button(3,(uint8_t)HAL_GPIO_ReadPin(GPIOB,1)); // X
-  gamepad_set_button(4,(uint8_t)HAL_GPIO_ReadPin(GPIOB,10)); // Y
-  gamepad_set_button(5,(uint8_t)HAL_GPIO_ReadPin(GPIOB,14)); // LB
-  gamepad_set_button(6,(uint8_t)HAL_GPIO_ReadPin(GPIOB,13)); // RB
-  gamepad_report.lt = HAL_GPIO_ReadPin(GPIOB,5) ? 255 : 0;  // LT
-  gamepad_report.rt = HAL_GPIO_ReadPin(GPIOB,15) ? 255 : 0;  // RT
-  gamepad_set_button(7,(uint8_t)HAL_GPIO_ReadPin(GPIOB,6)); // Back/Share
-  gamepad_set_button(8,(uint8_t)HAL_GPIO_ReadPin(GPIOB,11)); // Start
-  gamepad_set_button(9,(uint8_t)HAL_GPIO_ReadPin(GPIOB,8)); // LClick
-  gamepad_set_button(10,(uint8_t)HAL_GPIO_ReadPin(GPIOA,6)); // RClick
+  gamepad_set_button(1,(uint8_t)HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_0)); // A
+  gamepad_set_button(2,(uint8_t)HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_7)); // B
+  gamepad_set_button(5,(uint8_t)HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_1)); // X
+  gamepad_set_button(4,(uint8_t)HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_10)); // Y
+  gamepad_set_button(7,(uint8_t)HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_14)); // LB
+  gamepad_set_button(8,(uint8_t)HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_13)); // RB
+  gamepad_report.lt = HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_5) ? 255 : 0;  // LT
+  gamepad_report.rt = HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_15) ? 255 : 0;  // RT
+  gamepad_set_button(11,(uint8_t)HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_6)); // Back/Share
+  gamepad_set_button(12,(uint8_t)HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_11)); // Start
+  gamepad_set_button(14,!(uint8_t)HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_8)); // LClick
+  gamepad_set_button(15,!(uint8_t)HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_6)); // RClick
   gamepad_report.hat = get_dpad(
-              (uint8_t)HAL_GPIO_ReadPin(GPIOB,7),
-              (uint8_t)HAL_GPIO_ReadPin(GPIOA,8),
-              (uint8_t)HAL_GPIO_ReadPin(GPIOA,9),
-              (uint8_t)HAL_GPIO_ReadPin(GPIOA,10)
+              (uint8_t)HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_7),
+              (uint8_t)HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_8),
+              (uint8_t)HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_9),
+              (uint8_t)HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_10)
   );
   return;
 }

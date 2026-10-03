@@ -138,20 +138,17 @@ __ALIGN_BEGIN static uint8_t CUSTOM_HID_ReportDesc_FS[] __ALIGN_END =
   0x75, 0x04,        //    Report Size (4)                  
   0x95, 0x01,        //    Report Count (1)                 
   0x81, 0x03,        //    Input (Const,Var,Abs) - padding  
-  /* ---- ten buttons ---- */
+  /* ---- sixteen buttons ---- */
   0x05, 0x09,        //    Usage Page (Button)              
   0x19, 0x01,        //    Usage Minimum (Button 1)         
-  0x29, 0x0A,        //    Usage Maximum (Button 10)        
+  0x29, 0x10,        //    Usage Maximum (Button 16)        
   0x15, 0x00,        //    Logical Minimum (0)              
   0x25, 0x01,        //    Logical Maximum (1)              
   0x35, 0x00,        //    Physical Minimum (0)             
   0x45, 0x01,        //    Physical Maximum (1)             
   0x75, 0x01,        //    Report Size (1)                  
-  0x95, 0x0A,        //    Report Count (10)                
+  0x95, 0x10,        //    Report Count (16)                
   0x81, 0x02,        //    Input (Data,Var,Abs)             
-  0x75, 0x01,        //    Report Size (1)                  
-  0x95, 0x06,        //    Report Count (6)                 
-  0x81, 0x03,        //    Input (Const,Var,Abs) - padding  
   0xC0,              //  End Collection                     
   /* USER CODE END 0 */
   0xC0    /*     END_COLLECTION	             */
