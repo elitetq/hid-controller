@@ -6,7 +6,7 @@ A custom USB gamepad built on an STM32F103 (KiCad PCB + firmware). It has two an
 
 https://github.com/user-attachments/assets/c4e4d3e5-b4be-487b-b6eb-255510382f0a
 
-Linux enumerates it fully. Windows only partly enumerates it so far.
+Linux enumerates it fully. Windows only partly enumerates it so far and the workaround is to use [xbox360ce](https://www.x360ce.com/) as an emulator for XInput.
 
 ## Build the PCB
 
